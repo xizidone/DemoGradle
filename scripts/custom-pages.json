@@ -1,0 +1,5024 @@
+{
+  "pageName": "default",
+  "children": [
+    {
+      "pageName": "welcomePage",
+      "pageDesc": "欢迎页面",
+      "pagePath": "/welcome-page",
+      "hideInMenu": true,
+      "hideInConfig": true
+    },
+    {
+      "pageName": "pricingBooking",
+      "pageDesc": "定价簿记",
+      "pagePath": "/pricing-booking",
+      "children": [
+        {
+          "pageName": "pricing",
+          "pageDesc": "场外期权-试定价",
+          "pagePath": "/pricing-booking/pricing",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "toBooking",
+              "btnDesc": "转换簿记",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "historyPricing",
+              "btnDesc": "历史试定价",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "inverse",
+          "pageDesc": "场外期权-反算",
+          "pagePath": "/pricing-booking/inverse",
+          "children": [
+            {
+              "pageName": "snowballCouponRate",
+              "pageDesc": "雪球票息反算",
+              "pagePath": "/pricing-booking/inverse/snowball-coupon-rate",
+              "microApp": "snowballBacktest",
+              "clientId": "fd63f2022a640-4033-ac8e-157c2607bf87"
+            }
+          ]
+        },
+        {
+          "pageName": "backTest",
+          "pageDesc": "场外期权-回测",
+          "pagePath": "/pricing-booking/back-test",
+          "clientId": "fd63f2022a640-4033-ac8e-157c2607bf87",
+          "microApp": "snowballBacktest"
+        },
+        {
+          "pageName": "booking",
+          "pageDesc": "场外期权-交易簿记",
+          "pagePath": "/pricing-booking/booking",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "saveAsTemplateConfiguration",
+              "btnDesc": "另存为/模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "toPricing",
+              "btnDesc": "转换试定价",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "reset",
+              "btnDesc": "重置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "uploadEnclosure",
+              "btnDesc": "上传附件",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "bookingCommodity",
+          "pageDesc": "场外期权-交易簿记(商品)",
+          "pagePath": "/pricing-booking/booking-commodity"
+        },
+        {
+          "pageName": "swapBooking",
+          "pageDesc": "收益互换-交易簿记",
+          "pagePath": "/pricing-booking/swap-booking",
+          "children": [
+            {
+              "pageName": "generalContract",
+              "pageDesc": "一般合约",
+              "pagePath": "/pricing-booking/swap-booking/general-contract",
+              "permissions": [
+                {
+                  "btnName": "saveAsTemplateConfiguration",
+                  "btnDesc": "另存为/模板配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "uploadEnclosure",
+                  "btnDesc": "上传附件",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "reset",
+                  "btnDesc": "重置",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "frameContract",
+              "pageDesc": "框架合约",
+              "pagePath": "/pricing-booking/swap-booking/frame-booking",
+              "permissions": [
+                {
+                  "btnName": "saveAsTemplateConfiguration",
+                  "btnDesc": "另存为/模板配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "uploadEnclosure",
+                  "btnDesc": "",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "reset",
+                  "btnDesc": "重置",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "interestRateExchangeSingleCreate",
+          "pageDesc": "利率互换-交易簿记",
+          "pagePath": "/pricing-booking/swap-booking/interest-rate-exchange-single-create",
+          "permissions": [
+            {
+              "btnName": "saveAsTemplateConfiguration",
+              "btnDesc": "另存为/模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "pvPreSettle",
+              "btnDesc": "PV试算",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "prePricing",
+              "btnDesc": "试定价",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "reset",
+              "btnDesc": "重置",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "structureNoteBooking",
+          "pageDesc": "收益凭证-交易簿记",
+          "pagePath": "/pricing-booking/structure-note-booking",
+          "children": [
+            {
+              "pageName": "fixedStructureNoteBooking",
+              "pageDesc": "固定收益凭证",
+              "pagePath": "/pricing-booking/structure-note-booking/fixed-structure-note-booking"
+            },
+            {
+              "pageName": "floatingStructureNoteBooking",
+              "pageDesc": "浮动收益凭证",
+              "pagePath": "/pricing-booking/structure-note-booking/floating-structure-note-booking"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "riskManager",
+      "pageDesc": "实时风控",
+      "pagePath": "/risk-manager",
+      "children": [
+        {
+          "pageName": "intradayMegaReportNew",
+          "pageDesc": "实时风险&盈亏",
+          "pagePath": "/risk-manager/realTime-task-and-pnl-new",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "recalc",
+              "btnDesc": "重新计算",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出Excel",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "totalExposureLimitSet",
+              "btnDesc": "总敞口限额设置",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "scenarioAnalyzer",
+          "pageDesc": "场外期权-情景分析",
+          "pagePath": "/risk-manager/scenario",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "analyse",
+              "btnDesc": "分析",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "riskFormulaRCAlarm",
+          "pageDesc": "场外期权-指标限额预警",
+          "pagePath": "/risk-manager/risk-formula-rc-alarm",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/risk-service/riskControlFormulaAlarmLimit/pageRiskFormulaAlarm"
+            },
+            {
+              "btnName": "recalc",
+              "btnDesc": "重新计算",
+              "apiUrls": "/risk-service/riskControlFormulaAlarmLimit/triggerRiskControlFormulaLimitAlarm"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出Excel",
+              "apiUrls": "/risk-service/riskControlFormulaAlarmLimit/exportRiskFormulaAlarmRecord"
+            }
+          ]
+        },
+        {
+          "pageName": "swapHighFrequencyLongShortRealTimeRiskControl",
+          "pageDesc": "收益互换-日内异步风控",
+          "pagePath": "/risk-manager/swap-high-frequency-long-short-real-time-risk-control",
+          "permissions": [
+            {
+              "btnName": "recalc",
+              "btnDesc": "同步订单&计算",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "riskFormulaRCCAlarm",
+          "pageDesc": "联合风控-指标限额预警",
+          "pagePath": "/risk-manager/risk-formula-rcc-alarm",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "history",
+              "btnDesc": "查看历史数据/历史图形",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "recalc",
+              "btnDesc": "重新计算",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "barrierReminder",
+          "pageDesc": "敲入敲出提醒",
+          "pagePath": "/risk-manager/barrier-reminder",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出",
+              "apiUrls": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "tradeManagement",
+      "pageDesc": "持仓管理",
+      "pagePath": "/trade-management",
+      "children": [
+        {
+          "pageName": "onBoardTransaction",
+          "pageDesc": "场内持仓",
+          "pagePath": "/trade-management/on-board-transaction",
+          "permissions": [
+            {
+              "btnName": "siteWater",
+              "btnDesc": "场内流水",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "siteWater-set",
+              "btnDesc": "场内流水-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "siteWater-delete",
+              "btnDesc": "场内流水-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "siteWater-export",
+              "btnDesc": "场内流水-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "todayOnSiteOpsition",
+              "btnDesc": "场内持仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "todayOnSiteOpsition-set",
+              "btnDesc": "场内持仓-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "todayOnSiteOpsition-delete",
+              "btnDesc": "场内持仓-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "todayOnSiteOpsition-export",
+              "btnDesc": "场内持仓-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "OnSiteOpsitionStatistics",
+              "btnDesc": "场内持仓统计",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "OnSiteOpsitionStatistics-set",
+              "btnDesc": "场内持仓统计-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "OnSiteOpsitionStatistics-delete",
+              "btnDesc": "场内持仓统计-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "OnSiteOpsitionStatistics-export",
+              "btnDesc": "场内持仓统计-导出",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "contractManagement",
+          "pageDesc": "场外期权-交易列表",
+          "pagePath": "/trade-management/contract-manage",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/trade-service/findTradesPaged"
+            },
+            {
+              "btnName": "import",
+              "btnDesc": "导入交易",
+              "apiUrls": "/trade-service/uploadTrades"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出交易",
+              "apiUrls": "/trade-service/exportTradesToExcel"
+            },
+            {
+              "btnName": "exportTemplate",
+              "btnDesc": "导出簿记模板",
+              "apiUrls": "/trade-service/downloadExcelTemplateByTradeCriteria"
+            },
+            {
+              "btnName": "details",
+              "btnDesc": "详情页面",
+              "apiUrls": "/trade-service/findTrades"
+            },
+            {
+              "btnName": "detailsCopy",
+              "btnDesc": "详情页面-复制交易",
+              "apiUrls": "/trade-service/createTrades,/trade-service/upsert-trade-template,/trade-service/calcPricingTradeAndValidate,/trade-service/saveTryPricingResult"
+            },
+            {
+              "btnName": "detailsModify",
+              "btnDesc": "详情页面-修改交易",
+              "apiUrls": "/trade-service/unwindTrade,/trade-service/recreateTrade"
+            },
+            {
+              "btnName": "detailsDelete",
+              "btnDesc": "详情页面-删除交易",
+              "apiUrls": "/trade-service/deleteTrade,/workflow-service/processInstance/deleteProcessInstanceByBusinessIds"
+            },
+            {
+              "btnName": "detailsRevoke",
+              "btnDesc": "详情页面-撤销生命周期事件",
+              "apiUrls": "/workflow-service/processInstance/deleteProcessInstanceBySubBusinessIds,/trade-service/cancelEvent"
+            },
+            {
+              "btnName": "uploadEnclosure",
+              "btnDesc": "详情页面-上传附件",
+              "apiUrls": "/attachment-service/attachment/upload"
+            },
+            {
+              "btnName": "detailsUpload",
+              "btnDesc": "",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "open",
+              "btnDesc": "生命周期事件-开仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settle",
+              "btnDesc": "生命周期事件-结算",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwind",
+              "btnDesc": "生命周期事件-平仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "extension",
+              "btnDesc": "生命周期事件-展期",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "coupon",
+              "btnDesc": "生命周期事件-派息",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "knockOut",
+              "btnDesc": "生命周期事件-敲出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "knockIn",
+              "btnDesc": "生命周期事件-敲入",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividend",
+              "btnDesc": "生命周期事件-公司行为",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividendsSettle",
+              "btnDesc": "生命周期事件-分红结算",
+              "apiUrls": "",
+              "licenseFunction": "(OPTION_CASH_DIVIDEND)"
+            },
+            {
+              "btnName": "payment",
+              "btnDesc": "生命周期事件-支付",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "observe",
+              "btnDesc": "生命周期事件-观察",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "periodSettle",
+              "btnDesc": "生命周期事件-期间结算",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "lifecycleSummary",
+          "pageDesc": "场外期权-生命周期概览",
+          "pagePath": "/trade-management/lifecycle-summary",
+          "permissions": [
+            {
+              "btnName": "unwind",
+              "btnDesc": "开仓",
+              "apiUrls": "/trade-service/findLifecycleTradesPaged"
+            },
+            {
+              "btnName": "unwindBank",
+              "btnDesc": "开仓-选择银行账户",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindContact",
+              "btnDesc": "开仓-选择联系人",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindTemplate",
+              "btnDesc": "开仓-选择交易确认书模板",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindDownload",
+              "btnDesc": "开仓-生成交易确认书",
+              "apiUrls": "/document-service/tradeDocument/download"
+            },
+            {
+              "btnName": "unwindSend",
+              "btnDesc": "开仓-发送邮件",
+              "apiUrls": "/document-service/emailSend/sendAllLifeCycleEventEmail",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "unwindSubmit",
+              "btnDesc": "开仓-提交OA",
+              "apiUrls": "/document-service/externalOA/submit",
+              "licenseFunction": "(EXTERNAL_OA)"
+            },
+            {
+              "btnName": "unwindExport",
+              "btnDesc": "开仓-导出开仓信息",
+              "apiUrls": "/trade-service/downloadTradeCycleOpenExcel"
+            },
+            {
+              "btnName": "unwindUploadEnclosure",
+              "btnDesc": "开仓-上传附件",
+              "apiUrls": "/attachment-service/attachment/upload"
+            },
+            {
+              "btnName": "settle",
+              "btnDesc": "结算",
+              "apiUrls": "/trade-service/findLifecycleTradesPaged"
+            },
+            {
+              "btnName": "settleBank",
+              "btnDesc": "结算-选择银行账户",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settleContact",
+              "btnDesc": "结算-选择联系人",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settleTemplate",
+              "btnDesc": "结算-选择结算通知书模板",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settleTemplateUnwind",
+              "btnDesc": "结算-选择平仓通知书模板",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settleNotification",
+              "btnDesc": "结算-生成结算通知书",
+              "apiUrls": "/document-service/eventDocument/download"
+            },
+            {
+              "btnName": "settleNotificationUnwind",
+              "btnDesc": "结算-生成平仓通知书",
+              "apiUrls": "/document-service/eventDocument/download"
+            },
+            {
+              "btnName": "settleSend",
+              "btnDesc": "结算-发送邮件",
+              "apiUrls": "/document-service/emailSend/sendAllLifeCycleEventEmail",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "settleSubmit",
+              "btnDesc": "结算-提交OA",
+              "apiUrls": "/document-service/externalOA/submit",
+              "licenseFunction": "(EXTERNAL_OA)"
+            },
+            {
+              "btnName": "settleUploadEnclosure",
+              "btnDesc": "结算-上传附件",
+              "apiUrls": "/attachment-service/attachment/upload"
+            },
+            {
+              "btnName": "settleExport",
+              "btnDesc": "结算-导出结算信息",
+              "apiUrls": "/trade-service/downloadTradeCycleSettleExcel"
+            },
+            {
+              "btnName": "knockIn",
+              "btnDesc": "敲入",
+              "apiUrls": "/trade-service/findLifecycleTradesPaged",
+              "licenseFunction": "(OTC_LIFE_CYCLE_OVERVIEW_KNOCK_IN)"
+            },
+            {
+              "btnName": "knockOut",
+              "btnDesc": "敲出",
+              "apiUrls": "/trade-service/findLifecycleTradesPaged",
+              "licenseFunction": "(OTC_LIFE_CYCLE_OVERVIEW_KNOCK_OUT)"
+            },
+            {
+              "btnName": "dividend",
+              "btnDesc": "公司行为",
+              "apiUrls": "/trade-service/findLifecycleTradesPaged",
+              "licenseFunction": "(OTC_LIFE_CYCLE_OVERVIEW_KNOCK_DIVIDEND)"
+            }
+          ]
+        },
+        {
+          "pageName": "swapContractManagement",
+          "pageDesc": "收益互换-合约列表",
+          "pagePath": "/trade-management/swap-contract-management",
+          "permissions": [
+            {
+              "btnName": "transactionManagement",
+              "btnDesc": "交易管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "batchImportTransaction",
+              "btnDesc": "批量导入交易",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "batchUnwind",
+              "btnDesc": "批量平仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "batchTrialSettlement",
+              "btnDesc": "批量试结算",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "uploadAttachment",
+              "btnDesc": "上传附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "contract",
+              "btnDesc": "创建合约",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportContractList",
+              "btnDesc": "导出合约列表",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "copyTransactionDeleteTransaction",
+              "btnDesc": "复制交易/删除交易",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "adjustTheInitialPrepaid",
+              "btnDesc": "调整初始预付金",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "adjustSwapTradeFee",
+              "btnDesc": "",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "executiveLifeCycleEvent",
+              "btnDesc": "执行生命周期事件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "guaranteeGoldParameterManagement",
+              "btnDesc": "保障金参数管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "toBeModified",
+              "btnDesc": "待修改",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "pendingApproval",
+              "btnDesc": "待审批",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "approve",
+              "btnDesc": "审批",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "swapFWContractManagement",
+          "pageDesc": "收益互换-框架合约列表",
+          "pagePath": "/trade-management/swap-fw-contract-management",
+          "permissions": [
+            {
+              "btnName": "frameContract",
+              "btnDesc": "框架合约",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "batchImportWaterList",
+              "btnDesc": "框架合约-导入成交流水/导入基金净值",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "batchTransfer",
+              "btnDesc": "框架合约-批量调仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "batchImportContract",
+              "btnDesc": "框架合约-创建合约/批量导入合约",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportContractList",
+              "btnDesc": "框架合约-导出框架合约信息",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "deleteContract",
+              "btnDesc": "框架合约-删除交易",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "adjustTheInitialPrepaid",
+              "btnDesc": "框架合约-调整初始预付金",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "executiveLifeCycleEvent",
+              "btnDesc": "框架合约-执行生命周期事件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "guaranteeGoldParameterManagement",
+              "btnDesc": "框架合约-保障金参数管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "subContract",
+              "btnDesc": "子合约",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "subContractGuarantee",
+              "btnDesc": "子合约-查看保障金参数修改历史",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "subContractPrePay",
+              "btnDesc": "子合约-查看初始预付金修改历史",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "riskControlInAdvance",
+              "btnDesc": "预调仓风控",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "riskControlDetail",
+              "btnDesc": "预调仓风控-查看风控详情",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "SwapLifeCycleOverview",
+          "pageDesc": "收益互换-生命周期概览",
+          "pagePath": "/trade-management/swap-life-cycle-overview",
+          "permissions": [
+            {
+              "btnName": "unwind",
+              "btnDesc": "开仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportTheOpeningInformation",
+              "btnDesc": "开仓-导出开仓信息",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "generateTransactionConfirmation",
+              "btnDesc": "开仓-生成交易确认书",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settle",
+              "btnDesc": "结算",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "generateLiquidationConfirmation",
+              "btnDesc": "结算-生成平仓确认书",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "generateSettlementNotice",
+              "btnDesc": "结算-生成结算通知书",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportSettlementInformation",
+              "btnDesc": "结算-导出结算信息",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "settleBatchRevert",
+              "btnDesc": "结算-批量撤销",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "corporateBehavior",
+              "btnDesc": "公司行为",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportCorporateBehaviorInformation",
+              "btnDesc": "公司行为-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "corporateBehaviorBatchRevert",
+              "btnDesc": "公司行为-批量撤销",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "observe",
+              "btnDesc": "观察",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportObserveInformation",
+              "btnDesc": "观察-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "observeBatchRevert",
+              "btnDesc": "观察-批量撤销",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "swapStrategySettings",
+          "pageDesc": "收益互换-框架列表",
+          "pagePath": "/trade-management/strategy-settings",
+          "permissions": [
+            {
+              "btnName": "strategyManage",
+              "btnDesc": "框架管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "strategyManageTransfer",
+              "btnDesc": "框架管理-调仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "strategyManageImport",
+              "btnDesc": "框架管理-导入流水",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "strategyManageExport",
+              "btnDesc": "框架管理-导出信息",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "strategyManageSet",
+              "btnDesc": "框架管理-新增/编辑/删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "strategyTransfer",
+              "btnDesc": "框架调仓",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "strategyTransferRevoke",
+              "btnDesc": "框架调仓-撤销",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "riskControl",
+              "btnDesc": "预调仓风控",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "relatedContract",
+              "btnDesc": "关联合约",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "relatedWaterRecord",
+              "btnDesc": "关联流水",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "relatedWaterRecordDelete",
+              "btnDesc": "关联流水-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "positionContrast",
+              "btnDesc": "持仓对比",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "pageWaterRecordingManagement",
+          "pageDesc": "收益互换-成交流水",
+          "pagePath": "/trade-management/page-water-recording-management",
+          "permissions": [
+            {
+              "btnName": "limitSetting",
+              "btnDesc": "流水上传记录",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "limitSettingAddWaterRecord",
+              "btnDesc": "流水上传记录-新增流水",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "limitSettingDelete",
+              "btnDesc": "流水上传记录-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "termsSet",
+              "btnDesc": "流水详情记录",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "termsSetDelete",
+              "btnDesc": "流水详情记录-删除/批量删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "fundProductNetValue",
+              "btnDesc": "基金产品净值",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "fundProductNetValueDelete",
+              "btnDesc": "基金产品净值-删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "interestRateExchangeList",
+          "pageDesc": "利率互换-交易列表",
+          "pagePath": "/trade-management/interest-rate-exchange-list",
+          "permissions": [
+            {
+              "btnName": "contract",
+              "btnDesc": "创建合约",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "exportContractList",
+              "btnDesc": "导出合约列表",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "deleteContract",
+              "btnDesc": "删除交易",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "executiveLifeCycleEvent",
+              "btnDesc": "执行生命周期事件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "lifeCycleEventRevert",
+              "btnDesc": "详情-撤销生命周期事件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "detailReissueFunds",
+              "btnDesc": "详情-重发资金",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "detailPvPreSettle",
+              "btnDesc": "详情-pv试算",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "yhzqTradeConfirmation",
+          "pageDesc": "交易确认书",
+          "pagePath": "/trade-management/yhzq/trade-confirmation",
+          "clientId": "yhzq"
+        },
+        {
+          "pageName": "gdzqTradeNotifications",
+          "pageDesc": "交易事件提醒",
+          "pagePath": "/trade-management/gdzq/trade-notifications",
+          "clientId": "gdzq"
+        },
+        {
+          "pageName": "swhyInterchangeExpertise",
+          "pageDesc": "收益互换-专户管理",
+          "pagePath": "/trade-management/swhy/interchange-expertise",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "hxzqOaApprovalProcess",
+          "pageDesc": "OA审批流程",
+          "pagePath": "/trade-management/hxzq/OaApproval-process",
+          "clientId": "hxzq"
+        },
+        {
+          "pageName": "structureNotePublishManagement",
+          "pageDesc": "收益凭证-发行管理",
+          "pagePath": "/trade-management/structure-note-publish-management"
+        },
+        {
+          "pageName": "fixedStructureNoteContractManagement",
+          "pageDesc": "固定收益凭证-交易列表",
+          "pagePath": "/trade-management/fixed-structure-note-contract-management"
+        },
+        {
+          "pageName": "floatingStructureNoteContractManagement",
+          "pageDesc": "浮动收益凭证-交易列表",
+          "pagePath": "/trade-management/floating-structure-note-contract-management"
+        },
+        {
+          "pageName": "attachmentManagement",
+          "pageDesc": "文档管理",
+          "pagePath": "/trade-management/attachment-management"
+        },
+        {
+          "pageName": "yhdrSwapContractImportExport",
+          "pageDesc": "收益互换-合约导入导出",
+          "pagePath": "/trade-management/yhdr/swap-contract-import-export",
+          "clientId": "yhdr"
+        },
+        {
+          "pageName": "yhdrTransactionImportAndExport",
+          "pageDesc": "场外期权-交易导入导出",
+          "pagePath": "/trade-management/yhdr/transaction-import-and-export",
+          "clientId": "yhdr"
+        }
+      ]
+    },
+    {
+      "pageName": "clientManagement",
+      "pageDesc": "客户管理",
+      "pagePath": "/client-management",
+      "children": [
+        {
+          "pageName": "organizationInfo",
+          "pageDesc": "机构信息",
+          "pagePath": "/client-management/client-organization",
+          "permissions": [
+            {
+              "btnName": "organizationList",
+              "btnDesc": "机构列表",
+              "apiUrls": "/reference-data-service/institution/page"
+            },
+            {
+              "btnName": "organizationListSet",
+              "btnDesc": "机构列表-配置机构信息",
+              "apiUrls": "/reference-data-service/institution/create,/reference-data-service/party-excel/institution/import,/reference-data-service/party-excel/institution/update-batch,/reference-data-service/institution/find-by-id"
+            },
+            {
+              "btnName": "organizationListExport",
+              "btnDesc": "机构列表-导出机构信息",
+              "apiUrls": "/reference-data-service/party-excel/institution/export"
+            },
+            {
+              "btnName": "organizationListUploadEnclosure",
+              "btnDesc": "机构列表-上传机构信息附件",
+              "apiUrls": "/attachment-service/attachment/upload"
+            },
+            {
+              "btnName": "our",
+              "btnDesc": "我方信息",
+              "apiUrls": "/reference-data-service/ourSideInstitution/listAllOurSideInstitution",
+              "licenseFunction": "(OUR_SIDE_INSTITUTION)"
+            },
+            {
+              "btnName": "ourExport",
+              "btnDesc": "我方信息-导出我方机构信息",
+              "apiUrls": "/reference-data-service/ourSideInstitution/exportOurSideInstitution",
+              "licenseFunction": "(OUR_SIDE_INSTITUTION)"
+            },
+            {
+              "btnName": "ourSet",
+              "btnDesc": "我方信息-配置我方机构信息",
+              "apiUrls": "/reference-data-service/ourSideInstitution/createOurSideInstitution,/reference-data-service/ourSideInstitution/findOurSideInstitutionById",
+              "licenseFunction": "(OUR_SIDE_INSTITUTION)"
+            },
+            {
+              "btnName": "ourDelete",
+              "btnDesc": "我方信息-删除我方机构信息",
+              "apiUrls": "/reference-data-service/ourSideInstitution/deleteOurSideInstitutionById",
+              "licenseFunction": "(OUR_SIDE_INSTITUTION)"
+            },
+            {
+              "btnName": "ourUploadEnclosure",
+              "btnDesc": "我方信息-上传我方信息附件",
+              "apiUrls": "/attachment-service/attachment/upload",
+              "licenseFunction": "(OUR_SIDE_INSTITUTION)"
+            }
+          ]
+        },
+        {
+          "pageName": "clientInfo",
+          "pageDesc": "客户信息",
+          "pagePath": "/client-management/client-info",
+          "permissions": [
+            {
+              "btnName": "client",
+              "btnDesc": "客户列表",
+              "apiUrls": "/reference-data-service/party/page-search"
+            },
+            {
+              "btnName": "clientSet",
+              "btnDesc": "客户列表-配置客户信息",
+              "apiUrls": "/reference-data-service/party/one-stage-create,/reference-data-service/party/update,/reference-data-service/party-excel/party/update-batch,/reference-data-service/party-excel/party/import"
+            },
+            {
+              "btnName": "clientChangeState",
+              "btnDesc": "客户列表-更改状态",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "clientExport",
+              "btnDesc": "客户列表-导出客户信息",
+              "apiUrls": "/reference-data-service/party-excel/party/export"
+            },
+            {
+              "btnName": "clientUploadEnclosure",
+              "btnDesc": "客户列表-上传附件",
+              "apiUrls": "/attachment-service/attachment/upload"
+            },
+            {
+              "btnName": "clientCapital",
+              "btnDesc": "客户列表-禁用/启用资金账户",
+              "apiUrls": "/reference-data-service/party/update"
+            },
+            {
+              "btnName": "clientBank",
+              "btnDesc": "客户列表-禁用/启用银行账户",
+              "apiUrls": "/reference-data-service/party/update"
+            },
+            {
+              "btnName": "openAccount",
+              "btnDesc": "开户审批",
+              "apiUrls": "/reference-data-service/party/page-search"
+            },
+            {
+              "btnName": "openAccountApproval",
+              "btnDesc": "开户审批-审批",
+              "apiUrls": "/workflow-service/processInstance/approveWorkFlowInstance"
+            },
+            {
+              "btnName": "editAccount",
+              "btnDesc": "修改客户信息审批",
+              "apiUrls": "/reference-data-service/party/page-search"
+            },
+            {
+              "btnName": "editAccountApproval",
+              "btnDesc": "修改客户信息审批-审批",
+              "apiUrls": "/workflow-service/processInstance/approveWorkFlowInstance"
+            },
+            {
+              "btnName": "our",
+              "btnDesc": "我方信息",
+              "apiUrls": "/reference-data-service/ourSide/listAllOurSideRecord",
+              "licenseFunction": "(OUR_SIDE_PARTY)"
+            },
+            {
+              "btnName": "ourSet",
+              "btnDesc": "我方信息-配置我方信息",
+              "apiUrls": "/reference-data-service/ourSide/oneStageCreateOurSide,/reference-data-service/ourSide/updateOnlyOurSide,/reference-data-service/ourSide/deleteOurSideById",
+              "licenseFunction": "(OUR_SIDE_PARTY)"
+            },
+            {
+              "btnName": "ourDelete",
+              "btnDesc": "我方信息-删除我方信息",
+              "apiUrls": "/reference-data-service/ourSide/deleteOurSideById",
+              "licenseFunction": "(OUR_SIDE_PARTY)"
+            },
+            {
+              "btnName": "ourExport",
+              "btnDesc": "我方信息-导出我方机构信息",
+              "apiUrls": "/reference-data-service/ourSide/exportOurSide",
+              "licenseFunction": "(OUR_SIDE_PARTY)"
+            },
+            {
+              "btnName": "ourUploadEnclosure",
+              "btnDesc": "我方信息-上传我方信息附件",
+              "apiUrls": "/attachment-service/attachment/upload",
+              "licenseFunction": "(OUR_SIDE_PARTY)"
+            }
+          ]
+        },
+        {
+          "pageName": "swhyPartySearchReport",
+          "pageDesc": "尽调表上传",
+          "pagePath": "/client-management/swhy/party-search-report",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "yhzqQueryClientInfo",
+          "pageDesc": "查询客户信息",
+          "pagePath": "/client-management/yhzq/query-client-info",
+          "clientId": "yhzq"
+        },
+        {
+          "pageName": "salesManagement",
+          "pageDesc": "销售管理",
+          "pagePath": "/client-management/sales-management",
+          "permissions": [
+            {
+              "btnName": "sales",
+              "btnDesc": "销售人员管理",
+              "apiUrls": "/reference-data-service/company/department/sale/list,/reference-data-service/company/department/list"
+            },
+            {
+              "btnName": "salesSet",
+              "btnDesc": "销售人员管理-配置销售信息",
+              "apiUrls": "/reference-data-service/company/department/sale/create,/reference-data-service/company/department/sale/update"
+            },
+            {
+              "btnName": "salesDisable",
+              "btnDesc": "销售人员管理-禁用销售",
+              "apiUrls": "/reference-data-service/company/department/sale/updateSaleStatus"
+            },
+            {
+              "btnName": "statistics",
+              "btnDesc": "销售统计表",
+              "apiUrls": "/reference-data-service/company/getSaleStatisticsRecord"
+            },
+            {
+              "btnName": "statisticsExport",
+              "btnDesc": "销售统计表-导出销售统计表",
+              "apiUrls": "/reference-data-service/company/exportSaleStatisticsRecord"
+            }
+          ]
+        },
+        {
+          "pageName": "mailManage",
+          "pageDesc": "邮箱管理",
+          "pagePath": "/client-management/mail",
+          "children": [
+            {
+              "pageName": "mailboxManagement",
+              "pageDesc": "邮箱管理",
+              "pagePath": "/client-management/mail/mailbox-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": "/document-service/emailGroup/findAllEmailGroup,/document-service/email/findEmailPageable"
+                },
+                {
+                  "btnName": "mailSet",
+                  "btnDesc": "配置邮箱",
+                  "apiUrls": "/document-service/email/modifyEmail,/document-service/email/createEmail"
+                },
+                {
+                  "btnName": "mailDelete",
+                  "btnDesc": "删除邮箱",
+                  "apiUrls": "/document-service/email/deleteEmail"
+                },
+                {
+                  "btnName": "mailGroupSet",
+                  "btnDesc": "配置邮箱组",
+                  "apiUrls": "/document-service/emailGroup/createEmailGroup,/document-service/emailGroup/modifyEmailGroup"
+                },
+                {
+                  "btnName": "mailGroupDelete",
+                  "btnDesc": "删除邮箱组",
+                  "apiUrls": "/document-service/emailGroup/deleteEmailGroup"
+                },
+                {
+                  "btnName": "mailExport",
+                  "btnDesc": "导出邮箱",
+                  "apiUrls": "/document-service/email/exportEmail"
+                }
+              ]
+            },
+            {
+              "pageName": "mailSendingManagement",
+              "pageDesc": "邮件发送管理",
+              "pagePath": "/client-management/mail/mail-sending-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": "/document-service/emailGroup/findAllEmailGroup,/document-service/email/findAllEmail"
+                },
+                {
+                  "btnName": "mailSendingSet",
+                  "btnDesc": "配置邮件发送",
+                  "apiUrls": "/document-service/emailSendConfig/createEmailSendConfig,/document-service/emailSendConfig/modifyEmailSendConfig"
+                },
+                {
+                  "btnName": "mailSendingDelete",
+                  "btnDesc": "删除邮件发送配置",
+                  "apiUrls": "/document-service/emailSendConfig/deleteEmailSendConfig"
+                },
+                {
+                  "btnName": "mailSendingExport",
+                  "btnDesc": "导出邮件发送配置",
+                  "apiUrls": "/document-service/emailSendConfig/exportEmailSendConfig"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "partyBlacklist",
+          "pageDesc": "负面清单管理",
+          "pagePath": "/client-management/blacklist",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/reference-data-service/blacklist/party-name/list-all"
+            },
+            {
+              "btnName": "history",
+              "btnDesc": "查看历史变动记录",
+              "apiUrls": "/reference-data-service/blacklist/findBlockedListHistory"
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置负面清单",
+              "apiUrls": "/reference-data-service/blacklist/create,/reference-data-service/blacklist/update"
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除负面清单",
+              "apiUrls": "/reference-data-service/blacklist/delete"
+            }
+          ]
+        },
+        {
+          "pageName": "swhyOaProcessQuery",
+          "pageDesc": "OA流程查询",
+          "pagePath": "/client-management/swhy/oa-process-query",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "partyReviewRecords",
+          "pageDesc": "客户回访",
+          "pagePath": "/client-management/partyReviewRecords",
+          "permissions": [
+            {
+              "btnName": "customerReturnVisitInquiry",
+              "btnDesc": "客户回访查询",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "joinTheReturnList",
+              "btnDesc": "加入回访名单",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "customerReturnVisitRecord",
+              "btnDesc": "客户回访记录",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "newlyAddedEditDeleteReturnVisitRecord",
+              "btnDesc": "新增/编辑/删除回访记录",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "kyc",
+          "pageDesc": "问卷管理",
+          "pagePath": "/client-management/kyc",
+          "children": [
+            {
+              "pageName": "questionnaire",
+              "pageDesc": "问卷管理",
+              "pagePath": "/client-management/kyc/questionnaire",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "配置问卷",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "download",
+                  "btnDesc": "下载问卷",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "delete",
+                  "btnDesc": "删除问卷",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "disable",
+                  "btnDesc": "启用/停用问卷",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "partyQuestionnaire",
+              "pageDesc": "答卷管理",
+              "pagePath": "/client-management/kyc/party-questionnaire",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "配置答卷",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "delete",
+                  "btnDesc": "删除答卷",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "investorManagement",
+          "pageDesc": "收益凭证-投资者管理",
+          "pagePath": "/client-management/investor",
+          "children": [
+            {
+              "pageName": "informationManagement",
+              "pageDesc": "投资者信息管理",
+              "pagePath": "/client-management/investor/informationManagement"
+            },
+            {
+              "pageName": "shareManagement",
+              "pageDesc": "投资者份额管理",
+              "pagePath": "/client-management/investor/shareManagement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "fundAndMargin",
+      "pageDesc": "资金/保证金管理",
+      "pagePath": "/fund-and-margin",
+      "children": [
+        {
+          "pageName": "cashflowSummaryDetails",
+          "pageDesc": "交易现金流明细",
+          "pagePath": "/fund-and-margin/cashflow-summary-details",
+          "permissions": [
+            {
+              "btnName": "realized",
+              "btnDesc": "交易现金流-已发生",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "realized-export",
+              "btnDesc": "交易现金流-已发生-导出已发生现金流",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "realized-confirm",
+              "btnDesc": "交易现金流-已发生-确认支付",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "realized-update",
+              "btnDesc": "交易现金流-已发生-更新支付方式",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unrealized",
+              "btnDesc": "交易现金流-待发生",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unrealized-export",
+              "btnDesc": "交易现金流-待发生-导出待发生现金流",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "advancePayment",
+              "btnDesc": "预付金现金流",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "advancePayment-export",
+              "btnDesc": "预付金现金流-导出预付金现金流",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "advancePayment-confirm",
+              "btnDesc": "预付金现金流-确认支付",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "advancePayment-update",
+              "btnDesc": "预付金现金流-更新支付方式",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "settlementReminder",
+          "pageDesc": "场外期权-结算资金支付提醒",
+          "pagePath": "/fund-and-margin/settlement-reminder"
+        },
+        {
+          "pageName": "discrepancyManagement",
+          "pageDesc": "财务出入金",
+          "pagePath": "/fund-and-margin/discrepancy-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/capital-service/deposit-records/list"
+            },
+            {
+              "btnName": "discrepancy",
+              "btnDesc": "出入金",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置出入金",
+              "apiUrls": "/capital-service/deposit-records/import,/capital-service/deposit-records/add,/capital-service/deposit-records/update"
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除出入金",
+              "apiUrls": "/workflow-service/processInstance/deleteProcessInstanceByBusinessIds"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出出入金",
+              "apiUrls": "/capital-service/deposit-records/export"
+            },
+            {
+              "btnName": "approval",
+              "btnDesc": "审批",
+              "apiUrls": "/workflow-service/processInstance/approveWorkFlowInstance"
+            },
+            {
+              "btnName": "pendingModified",
+              "btnDesc": "待修改",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "pendingApproval",
+              "btnDesc": "待审批",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "bankFlow",
+              "btnDesc": "财务资金流水",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-import",
+              "btnDesc": "财务资金流水-导入",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-ignore",
+              "btnDesc": "财务资金流水-忽略",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-delete",
+              "btnDesc": "财务资金流水-删除",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-sync",
+              "btnDesc": "财务资金流水-同步",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-setSubFlow",
+              "btnDesc": "财务资金流水-配置子流水",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-check",
+              "btnDesc": "财务资金流水-拆分核对",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-confirmSubFlow",
+              "btnDesc": "财务资金流水-确认子流水",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            },
+            {
+              "btnName": "bankFlow-deleteSubFlow",
+              "btnDesc": "财务资金流水-删除子流水",
+              "apiUrls": "",
+              "licenseFunction": "(BANK_FLOW)"
+            }
+          ]
+        },
+        {
+          "pageName": "internalCapitalTransfer",
+          "pageDesc": "内部资金划转",
+          "pagePath": "/fund-and-margin/internal-capital-transfer"
+        },
+        {
+          "pageName": "customerAdvancePaymentManagement",
+          "pageDesc": "客户预付金管理",
+          "pagePath": "/fund-and-margin/customer-advance-payment-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/capital-service/advance-balances/list"
+            },
+            {
+              "btnName": "recalc",
+              "btnDesc": "重新计算",
+              "apiUrls": "/capital-service/capital-records/calculate"
+            },
+            {
+              "btnName": "import",
+              "btnDesc": "导入Excel",
+              "apiUrls": "/capital-service/advance-balances/import"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出Excel",
+              "apiUrls": "/capital-service/advance-balances/export"
+            }
+          ]
+        },
+        {
+          "pageName": "fundStatistics",
+          "pageDesc": "授信管理",
+          "pagePath": "/fund-and-margin/fund-statistics",
+          "permissions": [
+            {
+              "btnName": "fundsManage",
+              "btnDesc": "授信管理",
+              "apiUrls": "",
+              "licenseFunction": "(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsManage-set",
+              "btnDesc": "授信管理-配置",
+              "apiUrls": "",
+              "licenseFunction": "(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsManage-export",
+              "btnDesc": "授信管理-导出",
+              "apiUrls": "",
+              "licenseFunction": "(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsManage-delete",
+              "btnDesc": "授信管理-删除",
+              "apiUrls": "",
+              "licenseFunction": "(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsStatus",
+              "btnDesc": "授信状态",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW,FALSE)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsStatus-set",
+              "btnDesc": "授信状态-配置",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW,FALSE)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsStatus-export",
+              "btnDesc": "授信状态-导出",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW,FALSE)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "fundsStatus-delete",
+              "btnDesc": "授信状态-删除",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW,FALSE)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "flow",
+              "btnDesc": "流水",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "flow-set",
+              "btnDesc": "流水-配置",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "flow-export",
+              "btnDesc": "流水-导出",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "flow-delete",
+              "btnDesc": "流水-删除",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "modified",
+              "btnDesc": "待修改",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "modified-set",
+              "btnDesc": "待修改-更新",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "modified-delete",
+              "btnDesc": "待修改-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "approval",
+              "btnDesc": "待审批",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "approval-approve",
+              "btnDesc": "待审批-审批",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "statistics",
+              "btnDesc": "统计",
+              "apiUrls": "",
+              "licenseFunction": "(PARTY_CREDIT_SUB_FLOW)&(VALID_CLIENT,FALSE)",
+              "licenseClients": "swhy"
+            }
+          ]
+        },
+        {
+          "pageName": "margin",
+          "pageDesc": "保证金管理",
+          "pagePath": "/fund-and-margin/margin",
+          "children": [
+            {
+              "pageName": "customerMarginManagement",
+              "pageDesc": "场外期权-保证金参数",
+              "pagePath": "/fund-and-margin/margin/parameter-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "配置参数",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "marginManagement",
+              "pageDesc": "场外期权-保证金管理",
+              "pagePath": "/fund-and-margin/margin/margin-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "calc",
+                  "btnDesc": "保证金计算",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "update",
+                  "btnDesc": "更新维持保证金",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swapMarginSettingList",
+              "pageDesc": "收益互换-保证金管理",
+              "pagePath": "/fund-and-margin/margin/swap-margin-setting-list",
+              "permissions": [
+                {
+                  "btnName": "exportReport",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalculate",
+                  "btnDesc": "重新计算",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "fundsManagement",
+          "pageDesc": "资金盯市管理",
+          "pagePath": "/fund-and-margin/funds-management",
+          "permissions": [
+            {
+              "btnName": "currentFundingDetails",
+              "btnDesc": "当前资金明细",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "currentFundingDetails-export",
+              "btnDesc": "当前资金明细-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "currentFundingDetails-minSet",
+              "btnDesc": "当前资金明细-最小转账金额设置",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)"
+            },
+            {
+              "btnName": "currentFundingDetails-recalc",
+              "btnDesc": "当前资金明细-重新计算",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "currentFundingDetails-operation",
+              "btnDesc": "当前资金明细-追保/退保/豁免",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "historicalFundingDetails",
+              "btnDesc": "历史资金明细",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "historicalFundingDetails-export",
+              "btnDesc": "历史资金明细-导出",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "historicalFundingDetails-minSet",
+              "btnDesc": "历史资金明细-最小转账金额设置",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)|(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "historicalFundingDetails-operation",
+              "btnDesc": "历史资金明细-追保/退保/豁免",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginCallList",
+              "btnDesc": "追保列表",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallList-download",
+              "btnDesc": "追保列表-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallList-mailSend",
+              "btnDesc": "追保列表-发送邮件",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "marginCallList-export",
+              "btnDesc": "追保列表-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallList-edit",
+              "btnDesc": "追保列表-修改",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallList-delete",
+              "btnDesc": "追保列表-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallList-history",
+              "btnDesc": "追保列表-查看历史",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginReturnList",
+              "btnDesc": "退保列表",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnList-download",
+              "btnDesc": "退保列表-下载",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnList-mailSend",
+              "btnDesc": "退保列表-发送邮件",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)&(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnList-export",
+              "btnDesc": "退保列表-导出",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnList-edit",
+              "btnDesc": "退保列表-修改",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnList-delete",
+              "btnDesc": "退保列表-删除",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnList-history",
+              "btnDesc": "退保列表-查看历史",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "exemptionList",
+              "btnDesc": "豁免列表",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionList-export",
+              "btnDesc": "豁免列表-导出",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionList-downloadEnclosure",
+              "btnDesc": "豁免列表-附件下载",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionList-modify",
+              "btnDesc": "",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionList-edit",
+              "btnDesc": "豁免列表-修改",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionList-delete",
+              "btnDesc": "豁免列表-删除",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionList-history",
+              "btnDesc": "豁免列表-查看历史",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "marginCallApproval",
+              "btnDesc": "追保审批",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallApproval-approval",
+              "btnDesc": "追保审批-审批",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginCallApproval-modify",
+              "btnDesc": "追保审批-修改",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "marginReturnApproval",
+              "btnDesc": "退保审批",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnApproval-approval",
+              "btnDesc": "退保审批-审批",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "marginReturnApproval-modify",
+              "btnDesc": "退保审批-修改",
+              "apiUrls": "",
+              "licenseFunction": "(SUPERVISE,FALSE)"
+            },
+            {
+              "btnName": "exemptionApproval",
+              "btnDesc": "豁免审批",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionApproval-approval",
+              "btnDesc": "豁免审批-审批",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            },
+            {
+              "btnName": "exemptionApproval-modify",
+              "btnDesc": "豁免审批-修改",
+              "apiUrls": "",
+              "licenseFunction": "(MARGIN_CALL_EXEMPTION)&(SUPERVISE,FALSE)&(VALID_CLIENT)",
+              "licenseClients": "swhy"
+            }
+          ]
+        },
+        {
+          "pageName": "paraConfig",
+          "pageDesc": "场外期权-参数设置",
+          "pagePath": "/fund-and-margin/para-config",
+          "children": [
+            {
+              "pageName": "fundPara",
+              "pageDesc": "资金参数",
+              "pagePath": "/fund-and-margin/para-config/fund-para"
+            },
+            {
+              "pageName": "marginCallPara",
+              "pageDesc": "追保参数",
+              "pagePath": "/fund-and-margin/para-config/margin-call-para"
+            }
+          ]
+        },
+        {
+          "pageName": "swhyMaintenanceFundManagement",
+          "pageDesc": "场外期权-保证金管理",
+          "pagePath": "/fund-and-margin/swhy/maintenance-fund-management",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyTrendInfo",
+          "pageDesc": "场外期权-保证金参数",
+          "pagePath": "/fund-and-margin/swhy/trend-info",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "gxzqBankFlow",
+          "pageDesc": "银行流水导入",
+          "pagePath": "/fund-and-margin/gxzq/bank-daily-flow-import",
+          "clientId": "gxzq"
+        }
+      ]
+    },
+    {
+      "pageName": "dayEndManagement",
+      "pageDesc": "日终管理",
+      "pagePath": "/day-end-management",
+      "children": [
+        {
+          "pageName": "majorEventsReminder",
+          "pageDesc": "交易事件提醒",
+          "pagePath": "/day-end-management/major-events-reminder",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "deal",
+              "btnDesc": "处理交易事件",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "endOfDayAffair",
+          "pageDesc": "收盘操作",
+          "pagePath": "/day-end-management/end-of-day-affair",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "inspect",
+              "btnDesc": "检查",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "dayEndManagementOptions",
+          "pageDesc": "场外期权",
+          "pagePath": "/day-end-management/options",
+          "children": [
+            {
+              "pageName": "preBookManagement",
+              "pageDesc": "预开仓管理",
+              "pagePath": "/day-end-management/options/pre-book-management"
+            },
+            {
+              "pageName": "unwindManagement",
+              "pageDesc": "平仓管理",
+              "pagePath": "/day-end-management/options/unwind-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "unwind",
+                  "btnDesc": "平仓",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "dividendManagement",
+              "pageDesc": "公司行为管理",
+              "pagePath": "/day-end-management/options/dividend-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "dividend",
+                  "btnDesc": "公司行为",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "knockInManagement",
+              "pageDesc": "敲入管理",
+              "pagePath": "/day-end-management/options/knock-in-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "knockIn",
+                  "btnDesc": "敲入",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "couponManagement",
+              "pageDesc": "派息管理",
+              "pagePath": "/day-end-management/options/coupon-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "coupon",
+                  "btnDesc": "派息",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "knockOutManagement",
+              "pageDesc": "敲出管理",
+              "pagePath": "/day-end-management/options/knock-out-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "knockOut",
+                  "btnDesc": "敲出",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "observationManagement",
+              "pageDesc": "观察管理",
+              "pagePath": "/day-end-management/options/observation-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "observe",
+                  "btnDesc": "观察",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "periodSettleManagement",
+              "pageDesc": "期间结算管理",
+              "pagePath": "/day-end-management/options/period-settle-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "periodSettle",
+                  "btnDesc": "期间结算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "dividendsSettleManagement",
+              "pageDesc": "分红结算管理",
+              "pagePath": "/day-end-management/options/dividends-settle-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "dividendsSettle",
+                  "btnDesc": "分红结算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "settlementManagement",
+              "pageDesc": "结算管理",
+              "pagePath": "/day-end-management/options/settlement-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "preSettle",
+                  "btnDesc": "批量试结算",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "settle",
+                  "btnDesc": "结算",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "generateSettlementNotice",
+                  "btnDesc": "生成结算通知书",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "sendMail",
+                  "btnDesc": "发送邮件",
+                  "apiUrls": "",
+                  "licenseFunction": "(MAIL_SEND)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "dayEndManagementSwap",
+          "pageDesc": "收益互换",
+          "pagePath": "/day-end-management/swap",
+          "children": [
+            {
+              "pageName": "pageOneClickExecution",
+              "pageDesc": "日终清算",
+              "pagePath": "/day-end-management/swap/page-one-click-execution"
+            },
+            {
+              "pageName": "swapDividendManagement",
+              "pageDesc": "公司行为管理",
+              "pagePath": "/day-end-management/swap/dividend-management",
+              "permissions": [
+                {
+                  "btnName": "executiveDividendOperation",
+                  "btnDesc": "执行分红操作",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "editDividendOperation",
+                  "btnDesc": "编辑分红税率",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swapSettlementManagement",
+              "pageDesc": "结算管理",
+              "pagePath": "/day-end-management/swap/settlement-management"
+            },
+            {
+              "pageName": "swapLongShortAdjustment",
+              "pageDesc": "多空调整",
+              "pagePath": "/day-end-management/swap/long-short-adjustment"
+            },
+            {
+              "pageName": "swapInterestRateResetManagement",
+              "pageDesc": "利率重置管理",
+              "pagePath": "/day-end-management/swap/interest-rate-reset-management",
+              "permissions": [
+                {
+                  "btnName": "batchReset",
+                  "btnDesc": "批量重置/确认重置操作",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "batchResetImport",
+                  "btnDesc": "批量重置导入",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "swapInterestRateReset",
+          "pageDesc": "利率互换-利率重置",
+          "pagePath": "/day-end-management/swap-interest-rate-reset"
+        },
+        {
+          "pageName": "dayEndManagementStructureNote",
+          "pageDesc": "收益凭证",
+          "pagePath": "/day-end-management/structure-note",
+          "children": [
+            {
+              "pageName": "structureNoteBatchPublishManagement",
+              "pageDesc": "发行管理",
+              "pagePath": "/day-end-management/structure-note/batch-publish-management"
+            },
+            {
+              "pageName": "structureNoteTransferManagement",
+              "pageDesc": "转指增管理",
+              "pagePath": "/day-end-management/structure-note/transfer-management"
+            },
+            {
+              "pageName": "structureNoteGenerateDocuments",
+              "pageDesc": "批量生成文档",
+              "pagePath": "/day-end-management/structure-note/generate-documents"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "submission",
+      "pageDesc": "监管报送",
+      "pagePath": "/submission",
+      "children": [
+        {
+          "pageName": "submitted",
+          "pageDesc": "报送状态",
+          "pagePath": "/submission/submitted",
+          "permissions": [
+            {
+              "btnName": "party",
+              "btnDesc": "主补协议报送",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "party-remind",
+              "btnDesc": "主补协议报送-报送提醒设置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "party-export",
+              "btnDesc": "主补协议报送-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "party-uploadEnclosure",
+              "btnDesc": "主补协议报送-上传附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "party-downloadEnclosure",
+              "btnDesc": "主补协议报送-下载附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "party-deleteEnclosure",
+              "btnDesc": "主补协议报送-删除附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option",
+              "btnDesc": "期权报送",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option-remind",
+              "btnDesc": "期权报送-报送提醒设置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option-export",
+              "btnDesc": "期权报送-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option-import",
+              "btnDesc": "期权报送-导入",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option-uploadEnclosure",
+              "btnDesc": "期权报送-上传附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option-downloadEnclosure",
+              "btnDesc": "期权报送-下载附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "option-deleteEnclosure",
+              "btnDesc": "期权报送-删除附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "swap",
+              "btnDesc": "互换报送",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "swap-remind",
+              "btnDesc": "互换报送-报送提醒设置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "swap-upload",
+              "btnDesc": "互换报送-上传附件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "swap-import",
+              "btnDesc": "互换报送-导出",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "chargeReport",
+          "pageDesc": "报送平台",
+          "pagePath": "/submission-service/index.html#/user/sso-login"
+        }
+      ]
+    },
+    {
+      "pageName": "reports",
+      "pageDesc": "报告中心",
+      "pagePath": "/reports",
+      "children": [
+        {
+          "pageName": "outOption",
+          "pageDesc": "场外期权",
+          "pagePath": "/reports/out-option",
+          "children": [
+            {
+              "pageName": "eodPosition",
+              "pageDesc": "持仓明细",
+              "pagePath": "/reports/out-option/eod-position",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalc",
+                  "btnDesc": "重新计算",
+                  "apiUrls": "/report-service/job/executeByJobName"
+                },
+                {
+                  "btnName": "export",
+                  "btnDesc": "导出Excel",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "nylcEodPositionOld",
+              "pageDesc": "持仓明细(旧)",
+              "pagePath": "/reports/out-option/nylc/eod-position-old",
+              "clientId": "nylc"
+            },
+            {
+              "pageName": "hxzqEodPositionOld",
+              "pageDesc": "持仓明细(旧)",
+              "pagePath": "/reports/out-option/hxzq/eod-position-old",
+              "clientId": "hxzq"
+            },
+            {
+              "pageName": "hbzqEodPositionOld",
+              "pageDesc": "持仓明细(旧)",
+              "pagePath": "/reports/out-option/hbzq/eod-position-old",
+              "clientId": "hbzq"
+            },
+            {
+              "pageName": "cjzqEodPositionOld",
+              "pageDesc": "持仓明细(旧)",
+              "pagePath": "/reports/out-option/cjzq/eod-position-old",
+              "clientId": "cjzq"
+            },
+            {
+              "pageName": "reportsOptionLoss",
+              "pageDesc": "场外期权-最大损失5倍",
+              "pagePath": "/reports/out-option/option-loss"
+            },
+            {
+              "pageName": "pnlBreakdownReport",
+              "pageDesc": "日终盈亏分解报告",
+              "pagePath": "/reports/out-option/pnl-breakdown-report",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "export",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "eodPositionPoc",
+              "pageDesc": "",
+              "pagePath": "/reports/out-option/eod-position-poc"
+            },
+            {
+              "pageName": "customerPricingDetailManagement",
+              "pageDesc": "自定义估值管理",
+              "pagePath": "/reports/out-option/valuation-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "import",
+                  "btnDesc": "导入估值",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "subjectInstrumentSummary",
+              "pageDesc": "同一主体业务监测信息汇总表（一）",
+              "pagePath": "/reports/out-option/subject-instrument-summary",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "export",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "subjectMarginSummary",
+              "pageDesc": "同一主体业务监测信息汇总表（二）",
+              "pagePath": "/reports/out-option/subject-margin-summary",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "export",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swhyBusinessProfitAndLoss",
+              "pageDesc": "场外期权-业务总表",
+              "pagePath": "/reports/out-option/swhy/business-profit-and-loss",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyBusinessProfile",
+              "pageDesc": "场外期权-业务概况报告",
+              "pagePath": "/reports/out-option/swhy/business-profile",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyProfitAndLoss",
+              "pageDesc": "场外期权-盈亏统计",
+              "pagePath": "/reports/out-option/swhy/profit-and-loss",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyPositionStatistics",
+              "pageDesc": "场内持仓统计",
+              "pagePath": "/reports/out-option/swhy/position-statistics",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyTransactionFlow",
+              "pageDesc": "场内交易流水",
+              "pagePath": "/reports/out-option/swhy/transaction-flow",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyRiskMonitoring",
+              "pageDesc": "风险监控",
+              "pagePath": "/reports/out-option/swhy/risk-monitoring",
+              "clientId": "swhy",
+              "permissions": [
+                {
+                  "btnName": "deltaRiskLimit",
+                  "btnDesc": "Delta参考指标",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swhyClosedPrice",
+              "pageDesc": "场外期权-市场数据与参数",
+              "pagePath": "/reports/out-option/swhy/closed-price",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyBusinessDaily",
+              "pageDesc": "场外期权-合约信息报告",
+              "pagePath": "/reports/out-option/swhy/business-daily",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyRiskMonitoringSummary",
+              "pageDesc": "风险敞口汇总表",
+              "pagePath": "/reports/out-option/swhy/risk-monitoring-summary",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "nylcValuationDownload",
+              "pageDesc": "估值下载",
+              "pagePath": "/reports/nylc/valuationDownload",
+              "clientId": "nylc"
+            }
+          ]
+        },
+        {
+          "pageName": "interchange",
+          "pageDesc": "收益互换",
+          "pagePath": "/reports/interchange",
+          "children": [
+            {
+              "pageName": "pageFrameValuationReport",
+              "pageDesc": "框架合约估值报告",
+              "pagePath": "/reports/interchange/page-frame-valuation-report",
+              "permissions": [
+                {
+                  "btnName": "exportReport",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalculate",
+                  "btnDesc": "重新计算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "pageRiskReports",
+              "pageDesc": "风控报告",
+              "pagePath": "/reports/interchange/page-risk-reports",
+              "permissions": [
+                {
+                  "btnName": "exportReport",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalculate",
+                  "btnDesc": "重新计算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "pagePnlReports",
+              "pageDesc": "日终盈亏",
+              "pagePath": "/reports/interchange/page-pnl-reports",
+              "permissions": [
+                {
+                  "btnName": "exportReport",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalculate",
+                  "btnDesc": "重新计算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swapUnderlyingReports",
+              "pageDesc": "标的估值报告",
+              "pagePath": "/reports/interchange/swap-underlying-reports",
+              "permissions": [
+                {
+                  "btnName": "exportReport",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalculate",
+                  "btnDesc": "重新计算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swapContractDetailsList",
+              "pageDesc": "合约估值报告",
+              "pagePath": "/reports/interchange/swap-contract-details-list",
+              "permissions": [
+                {
+                  "btnName": "exportReport",
+                  "btnDesc": "导出报告",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "recalculate",
+                  "btnDesc": "重新计算",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "swhyPositionSummary",
+              "pageDesc": "专户头寸报告",
+              "pagePath": "/reports/interchange/swhy/position-summary",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhySwapProfitAndLoss",
+              "pageDesc": "互换盈亏报告",
+              "pagePath": "/reports/interchange/swhy/swap-profit-and-loss",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "SwhyExchangeRiskMonitoring",
+              "pageDesc": "互换风险监控",
+              "pagePath": "/reports/interchange/swhy/exchange-risk-monitoring",
+              "clientId": "swhy"
+            },
+            {
+              "pageDesc": "净值计算表",
+              "pageName": "assetValueReport",
+              "pagePath": "/reports/interchange/swhy/asset-value-report",
+              "clientId": "swhy"
+            }
+          ]
+        },
+        {
+          "pageName": "swapInterestValuationReport",
+          "pageDesc": "利率互换-交易估值报告",
+          "pagePath": "/reports/swap-interest-valuation-report",
+          "permissions": [
+            {
+              "btnName": "exportReport",
+              "btnDesc": "导出报告",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "recalculate",
+              "btnDesc": "重新计算",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "intradayRiskAndPnlReport",
+          "pageDesc": "日终风险&盈亏报告",
+          "pagePath": "/reports/realTime-task-and-pnl-report",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "valuation",
+          "pageDesc": "客户估值报告",
+          "pagePath": "/reports/valuation",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "report",
+              "btnDesc": "客户估值报告-生成客户估值报告",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "sendMail",
+              "btnDesc": "客户估值报告-发送邮件",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "客户估值报告-导出",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "cashFlow",
+          "pageDesc": "现金流日终报告",
+          "pagePath": "/reports/cash-flow",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "generateReport",
+              "btnDesc": "生成报告",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "cashFlowForecast",
+          "pageDesc": "现金流预测报告",
+          "pagePath": "/reports/cash-flow-forecast"
+        },
+        {
+          "pageName": "reportManagement",
+          "pageDesc": "自定义报表",
+          "pagePath": "/reports/report-management"
+        },
+        {
+          "pageName": "endOfDayReport",
+          "pageDesc": "生命周期汇总",
+          "pagePath": "/reports/lifecycle-events-summary",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "salesPermissions",
+          "pageDesc": "销售权限查询",
+          "pagePath": "/reports/sales-permissions"
+        },
+        {
+          "pageName": "yhzqCispReport",
+          "pageDesc": "CISP监管报表",
+          "pagePath": "/reports/yhzq/cisp-report",
+          "clientId": "yhzq"
+        },
+        {
+          "pageName": "yhzqCispExportReport",
+          "pageDesc": "银河估值",
+          "pagePath": "/reports/yhzq/cisp-export-report",
+          "clientId": "yhzq"
+        },
+        {
+          "pageName": "yhzqCsiDataSubmission",
+          "pageDesc": "中证数据报送",
+          "pagePath": "/reports/yhzq/csi-data-submission",
+          "clientId": "yhzq"
+        },
+        {
+          "pageName": "historicalApproval",
+          "pageDesc": "历史审批信息",
+          "pagePath": "/reports/historical-approval"
+        },
+        {
+          "pageName": "gdzqOtcDerivativesMonthlyReports",
+          "pageDesc": "证券公司场外股权衍生品业务月度报表",
+          "pagePath": "/reports/gdzq/OTC-derivatives-monthly-statement",
+          "clientId": "gdzq"
+        },
+        {
+          "pageName": "abValuationIsPriced",
+          "pageDesc": "基金互换产品监控",
+          "pagePath": "/reports/swhy/ab-valuation-is-priced",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "dfzqEndofdayprofitAndLossreport",
+          "pageDesc": "日终盈亏报告",
+          "pagePath": "/reports/dfzq/endofdayprofit-and-lossreport",
+          "clientId": "dfzq"
+        },
+        {
+          "pageName": "swhyHostingCenterReports",
+          "pageDesc": "托管中心报告",
+          "pagePath": "/reports/swhy/hosting-center-reports",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "strategyIndexInfo",
+          "pageDesc": "策略指数报告",
+          "pagePath": "/reports/strategy-index-info",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出报告",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "yhdrBatchTransactionConfirmation",
+          "pageDesc": "确认书上传与发送",
+          "pagePath": "/reports/yhdr/batch-transaction-confirmation",
+          "clientId": "yhdr"
+        }
+      ]
+    },
+    {
+      "pageName": "swhyReports",
+      "pageDesc": "日终报告",
+      "pagePath": "/swhyReports",
+      "clientId": "swhy",
+      "children": [
+        {
+          "pageName": "swhyBusinessSubtotal",
+          "pageDesc": "场外期权-业务总表-分类汇总",
+          "pagePath": "/swhyReports/swhy/business-subtotal",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyProfitAndLossDecomposition",
+          "pageDesc": "场外期权-盈亏分解",
+          "pagePath": "/swhyReports/swhy/profit-andL-loss-decomposition",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyContractValuationDaily",
+          "pageDesc": "场外期权-合约对客估值日报",
+          "pagePath": "/swhyReports/swhy/contract-valuation-daily",
+          "clientId": "swhy"
+        }
+      ]
+    },
+    {
+      "pageName": "swhyMarketRiskReport",
+      "pageDesc": "市场风控报表",
+      "pagePath": "/marketRiskReport",
+      "clientId": "swhy",
+      "children": [
+        {
+          "pageName": "swhyRiskExposureTotal",
+          "pageDesc": "期权业务汇总-总敞口监控",
+          "pagePath": "/marketRiskReport/swhy/riskExposureTotal",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyRiskcontrolsettingparameters",
+          "pageDesc": "风控参数设置",
+          "pagePath": "/marketRiskReport/swhy/riskcontrolsettingparameters",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhySwapRiskControlSummary",
+          "pageDesc": "收益互换风控汇总表",
+          "pagePath": "/marketRiskReport/swhy/swap-risk-control-summary",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyGreeksLimitIndicator",
+          "pageDesc": "Greeks限额指标配置",
+          "pagePath": "/marketRiskReport/swhy/greeks-limit-indicator",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyStandardMonitoring",
+          "pageDesc": "期权业务汇总-标的监控",
+          "pagePath": "/marketRiskReport/swhy/standard-monitoring",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyMonitoringOfCustomerStandard",
+          "pageDesc": "期权业务汇总-分客户标的监控",
+          "pagePath": "/marketRiskReport/swhy/monitoring-of-customer-standard",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyPressureTest",
+          "pageDesc": "压力测试",
+          "pagePath": "/marketRiskReport/swhy/pressure-test",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "domesticStockWhiteList",
+          "pageDesc": "境内股票白名单",
+          "pagePath": "/marketRiskReport/swhy/domesticStockWhiteList",
+          "clientId": "swhy",
+          "permissions": [
+            {
+              "btnName": "swap",
+              "btnDesc": "收益互换",
+              "apiUrls": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "swhyCreditRiskStatement",
+      "pageDesc": "信用风险报表",
+      "pagePath": "/creditRiskStatement",
+      "clientId": "swhy",
+      "children": [
+        {
+          "pageName": "swhyExposureAtDefault",
+          "pageDesc": "同一客户集中度管控信息报送表",
+          "pagePath": "/creditRiskStatement/swhy/exposure-at-default",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyCreditBusinessStockVar",
+          "pageDesc": "信用业务股票VaR",
+          "pagePath": "/creditRiskStatement/swhy/credit-business-stock-var",
+          "clientId": "swhy"
+        }
+      ]
+    },
+    {
+      "pageName": "markets",
+      "pageDesc": "市场数据",
+      "pagePath": "/markets",
+      "children": [
+        {
+          "pageName": "marketManagement",
+          "pageDesc": "行情管理",
+          "pagePath": "/markets/market-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/market-data-service/quote/list-paged"
+            },
+            {
+              "btnName": "manage",
+              "btnDesc": "管理行情数据",
+              "apiUrls": "/market-data-service/quote/save"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出行情",
+              "apiUrls": "/market-data-service/quote/export-quote"
+            }
+          ]
+        },
+        {
+          "pageName": "subjectStore",
+          "pageDesc": "标的物管理",
+          "pagePath": "/markets/subject-store",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/market-data-service/exInstrument/listInstruments"
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置标的物信息",
+              "apiUrls": "/market-data-service/market-excel/instrument/import,/market-data-service/exInstrument/saveInstrument"
+            }
+          ]
+        },
+        {
+          "pageName": "instrumentChgManagement",
+          "pageDesc": "涨跌幅管理",
+          "pagePath": "/markets/trend-info",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置涨跌幅",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "history",
+              "btnDesc": "涨跌幅历史",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "totalEquityMarketValue",
+          "pageDesc": "总股本/总市值",
+          "pagePath": "/markets/total-equity-market-value",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置总股本/总市值",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除总股本/总市值",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "corporateAction",
+          "pageDesc": "权益管理",
+          "pagePath": "/markets/corporate-action",
+          "permissions": [
+            {
+              "btnName": "dividendManagement",
+              "btnDesc": "公司行为管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividendManagement-set",
+              "btnDesc": "公司行为管理-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividendManagement-delete",
+              "btnDesc": "公司行为管理-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividendTaxRate",
+              "btnDesc": "分红税率",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividendTaxRate-set",
+              "btnDesc": "分红税率-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "dividendTaxRate-delete",
+              "btnDesc": "分红税率-删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "currencyManagement",
+          "pageDesc": "货币管理",
+          "pagePath": "/markets/currency-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置货币信息",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除货币信息",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "fxRateManagement",
+          "pageDesc": "汇率行情",
+          "pagePath": "/markets/fx-rate-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置汇率行情",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出汇率行情",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "history",
+              "btnDesc": "历史行情",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "strategyIndexManagement",
+          "pageDesc": "策略指数管理",
+          "pagePath": "/markets/strategy-index-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置策略指数",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出策略指数",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除策列指数",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "referenceInterestRates",
+          "pageDesc": "基准利率",
+          "pagePath": "/markets/reference-interest-rates",
+          "permissions": [
+            {
+              "btnName": "manage",
+              "btnDesc": "管理基准利率",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "interestRateQuotes",
+          "pageDesc": "利率行情",
+          "pagePath": "/markets/interest-rate-quotes",
+          "permissions": [
+            {
+              "btnName": "manage",
+              "btnDesc": "管理利率行情",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出利率行情",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "majorEventsManagement",
+          "pageDesc": "停复牌管理",
+          "pagePath": "/markets/major-events-management",
+          "permissions": [
+            {
+              "btnName": "stopResumeTrading",
+              "btnDesc": "停复牌",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "stopResumeTrading-set",
+              "btnDesc": "停复牌-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "stopResumeTrading-export",
+              "btnDesc": "停复牌-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "stopResumeTrading-delete",
+              "btnDesc": "停复牌-删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "calendars",
+          "pageDesc": "交易日历",
+          "pagePath": "/markets/calendars",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/reference-data-service/calendar/list-all-calendars"
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置交易日历",
+              "apiUrls": "/reference-data-service/calendar/upsert-calendar,/reference-data-service/calendar/import"
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除交易日历",
+              "apiUrls": "/reference-data-service/calendar/delete-calendar-by-id"
+            }
+          ]
+        },
+        {
+          "pageName": "salesRestrictionManagement",
+          "pageDesc": "限售解禁管理",
+          "pagePath": "/markets/sales-restriction-management",
+          "permissions": [
+            {
+              "btnName": "salesRestrictionDetails",
+              "btnDesc": "限售解禁明细",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "salesRestrictionDetails-set",
+              "btnDesc": "限售解禁明细-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "salesRestrictionDetails-export",
+              "btnDesc": "限售解禁明细-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "salesRestrictionDetails-abandon",
+              "btnDesc": "限售解禁明细-废弃",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "salesRestrictionDetails-removeAdd",
+              "btnDesc": "限售解禁明细-移除/添加",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "restricteShareValuation",
+              "btnDesc": "限售股估值",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "restricteShareValuation-set",
+              "btnDesc": "限售股估值-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "restricteShareValuation-export",
+              "btnDesc": "限售股估值-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "restricteShareValuation-delete",
+              "btnDesc": "限售股估值-删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "restrictedStockPurchaseList",
+          "pageDesc": "限售股申购确认清单",
+          "pagePath": "/markets/major-events/swhy/restricted-stock-purchase-list",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "assetCorrelation",
+          "pageDesc": "资产相关性",
+          "pagePath": "/markets/swhy/asset-correlation",
+          "clientId": "swhy"
+        }
+      ]
+    },
+    {
+      "pageName": "pricingSettings",
+      "pageDesc": "定价配置",
+      "pagePath": "/pricing-settings",
+      "children": [
+        {
+          "pageName": "systemGroupManagement",
+          "pageDesc": "场外期权-定价分组",
+          "pagePath": "/pricing-settings/grouping-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/pricing-service/parameter-groups/list,/pricing-service/parameter-groups/list-paged"
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置定价分组",
+              "apiUrls": "/pricing-service/parameter-groups/update,/pricing-service/parameter-groups/add"
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除定价分组",
+              "apiUrls": "/pricing-service/parameter-groups/delete"
+            }
+          ]
+        },
+        {
+          "pageName": "pricingSettingsList",
+          "pageDesc": "场外期权-定价参数",
+          "pagePath": "/pricing-settings/list",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/pricing-service/parameter-groups/list,/pricing-service/global-parameters/list"
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置定价参数",
+              "apiUrls": "/pricing-service/global-parameters/import,/pricing-service/global-parameters/batch-upsert"
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除定价参数",
+              "apiUrls": "/pricing-service/global-parameters/delete"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出定价参数",
+              "apiUrls": "/pricing-service/global-parameters/export"
+            },
+            {
+              "btnName": "approval",
+              "btnDesc": "审批",
+              "apiUrls": "/workflow-service/processInstance/runtimeProcessInstance"
+            }
+          ]
+        },
+        {
+          "pageName": "pricingEnvironment",
+          "pageDesc": "场外期权-定价环境",
+          "pagePath": "/pricing-settings/pricing-environment",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": "/pricing-service/pricing-environments/list-paged,/pricing-service/pricing-environments/list"
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置定价环境",
+              "apiUrls": "/pricing-service/pricing-environments/update"
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除定价环境",
+              "apiUrls": "/pricing-service/pricing-environments/delete"
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出定价环境",
+              "apiUrls": "/pricing-service/pricing-environments/export/param"
+            }
+          ]
+        },
+        {
+          "pageName": "atSightCurve",
+          "pageDesc": "利率互换-即期曲线定义",
+          "pagePath": "/pricing-settings/interest-rate-swaps/at-sight-curve",
+          "permissions": [
+            {
+              "btnName": "manage",
+              "btnDesc": "管理即期曲线定义",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "valuationDefine",
+          "pageDesc": "利率互换-估值计算定义",
+          "pagePath": "/pricing-settings/interest-rate-swaps/valuation-define",
+          "permissions": [
+            {
+              "btnName": "manage",
+              "btnDesc": "管理估值计算定义",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "hedgeManagement",
+          "pageDesc": "股指期货-对冲管理",
+          "pagePath": "/pricing-settings/hedge-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除",
+              "apiUrls": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "axzqRiskDaily",
+      "pageDesc": "风险日报",
+      "pagePath": "/daily-Risk",
+      "clientId": "axzq",
+      "children": [
+        {
+          "pageName": "axzqContractInfoImport",
+          "pageDesc": "ContractInfo 导入",
+          "pagePath": "/daily-Risk/axzq/contract-info-import",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqContractInfoDaily",
+          "pageDesc": "Contract-Info 日报",
+          "pagePath": "/daily-Risk/axzq/contract-info-daily",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqBreakupInformationOverview",
+          "pageDesc": "盈亏分解信息概览",
+          "pagePath": "/daily-Risk/axzq/breakup-information-overview",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqPnlDaily",
+          "pageDesc": "PNL 日报",
+          "pagePath": "/daily-Risk/axzq/pnl-daily",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqRiskControlSettings",
+          "pageDesc": "风险限额设置",
+          "pagePath": "/daily-Risk/axzq/risk-control-settings",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqBusinessOverviewDaily",
+          "pageDesc": "业务概览",
+          "pagePath": "/daily-Risk/axzq/business-overview-daily",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqOverviewofRiskLimitMonitoring",
+          "pageDesc": "风险限额监控概览",
+          "pagePath": "/daily-Risk/axzq/overviewof-risk-limit-monitoring",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqOptionConcentrationAnalysis",
+          "pageDesc": "场外期权集中度分析",
+          "pagePath": "/daily-Risk/axzq/option-concentration-analysis",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqOverrunEventReports",
+          "pageDesc": "超限事件报告",
+          "pagePath": "/daily-Risk/axzq/overrun-event-reports",
+          "clientId": "axzq"
+        }
+      ]
+    },
+    {
+      "pageName": "riskManagement",
+      "pageDesc": "风险管理",
+      "pagePath": "/risk-management",
+      "clientId": "axzq",
+      "children": [
+        {
+          "pageName": "axzqRiskDailyDetailImport",
+          "pageDesc": "风险日报明细导入",
+          "pagePath": "/risk-management/axzq/risk-daily-detail-import",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqBusinessBverview",
+          "pageDesc": "业务概览",
+          "pagePath": "/risk-management/axzq/business-bverview",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqBusinessBverviewImport",
+          "pageDesc": "业务概览导入",
+          "pagePath": "/risk-management/axzq/business-bverview-import",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqPartyCreditLeaveReport",
+          "pageDesc": "交易对手信用风险监控",
+          "pagePath": "/risk-management/axzq/party-credit-leave-report",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqPartyCreditRiskReport",
+          "pageDesc": "交易对手信用风险导入",
+          "pagePath": "/risk-management/axzq/party-credit-risk-report",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqRiskLimitMonitoring",
+          "pageDesc": "风险限额监控",
+          "pagePath": "/risk-management/axzq/risk-limit-monitoring",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqRiskLimitMonitoringImport",
+          "pageDesc": "风险限额导入",
+          "pagePath": "/risk-management/axzq/risk-limit-monitoring-import",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqWatchingMarginMonitoring",
+          "pageDesc": "盯市保证金监控",
+          "pagePath": "/risk-management/axzq/party-watching-margin-monitoring",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqEarnestMoneyTolead",
+          "pageDesc": "盯市保证金导入",
+          "pagePath": "/risk-management/axzq/party-earnest-money-tolead",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqCreditRiskLimit",
+          "pageDesc": "信用风险限额",
+          "pagePath": "/risk-management/axzq/creditRiskLimit",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "axzqOverrunEventReportsManage",
+          "pageDesc": "超限事件报告",
+          "pagePath": "/risk-management/axzq/overrun-event-reports-manage",
+          "clientId": "axzq"
+        }
+      ]
+    },
+    {
+      "pageName": "systemSettings",
+      "pageDesc": "系统设置",
+      "pagePath": "/system-settings",
+      "children": [
+        {
+          "pageName": "optionParamsSettings",
+          "pageDesc": "场外期权设置",
+          "pagePath": "/system-settings/option-params-settings",
+          "children": [
+            {
+              "pageName": "productTemplate",
+              "pageDesc": "产品结构模板",
+              "pagePath": "/system-settings/option-params-settings/productTemplate",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "配置结构模板",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "delete",
+                  "btnDesc": "删除结构模板",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "settlementTemplate",
+              "pageDesc": "结算模板管理",
+              "pagePath": "/system-settings/option-params-settings/SettlementTemplate",
+              "permissions": [
+                {
+                  "btnName": "library",
+                  "btnDesc": "结算模板库",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "library-set",
+                  "btnDesc": "结算模板库-配置模板",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "library-exportSettlementTemplate",
+                  "btnDesc": "结算模板库-导出结算模板",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "library-exportAlgorithms",
+                  "btnDesc": "结算模板库-导出期权收益算法",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "library-delete",
+                  "btnDesc": "结算模板库-删除模板",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "configuration",
+                  "btnDesc": "默认结算模板配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "configuration-set",
+                  "btnDesc": "默认结算模板配置-配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "configuration-delete",
+                  "btnDesc": "默认结算模板配置-删除",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "riskFormulaRCSetting",
+              "pageDesc": "风控设置",
+              "pagePath": "/system-settings/option-params-settings/riskFormulaRCSetting",
+              "permissions": [
+                {
+                  "btnName": "whiteList",
+                  "btnDesc": "白名单",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "whiteList-set",
+                  "btnDesc": "白名单-配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "whiteList-delete",
+                  "btnDesc": "白名单-删除",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "whiteList-export",
+                  "btnDesc": "白名单-导出",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "quota",
+                  "btnDesc": "限额配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "quota-set",
+                  "btnDesc": "限额配置-配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "quota-delete",
+                  "btnDesc": "限额配置-删除",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "quota-disable",
+                  "btnDesc": "限额配置-禁用/启用",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "reportPricingEnvironmentManagement",
+              "pageDesc": "报告环境管理",
+              "pagePath": "/system-settings/option-params-settings/config",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "modify",
+                  "btnDesc": "修改报告定价环境",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "pricingIndexManagement",
+              "pageDesc": "定价及报告指标配置",
+              "pagePath": "/system-settings/option-params-settings/pricing-index-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "编辑指标配置",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "swapParamsSettings",
+          "pageDesc": "收益互换设置",
+          "pagePath": "/system-settings/swap-params-settings",
+          "children": [
+            {
+              "pageName": "pageValuationManagement",
+              "pageDesc": "估值日与行情获取日配置",
+              "pagePath": "/system-settings/swap-params-settings/page-valuation-management",
+              "permissions": [
+                {
+                  "btnName": "edit",
+                  "btnDesc": "编辑默认配置",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "pageRiskControlQuotaAllocation",
+              "pageDesc": "风控设置",
+              "pagePath": "/system-settings/swap-params-settings/page-risk-control-quota-allocation",
+              "permissions": [
+                {
+                  "btnName": "whitelist",
+                  "btnDesc": "白名单",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "managementWhitelist",
+                  "btnDesc": "管理白名单",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "limitSettings",
+                  "btnDesc": "限额设置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "managementLimitSettings",
+                  "btnDesc": "管理限额配置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "termsSet",
+                  "btnDesc": "条款设置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "managementTermsSettings",
+                  "btnDesc": "管理条款设置",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "targetWarning",
+                  "btnDesc": "标的警示",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "managementTargetWarning",
+                  "btnDesc": "管理标的警示",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "accountCapitalAllocation",
+              "pageDesc": "一户两地-资金分配",
+              "pagePath": "/system-settings/swap-params-settings/page-account-capital-allocation",
+              "permissions": [
+                {
+                  "btnName": "manage",
+                  "btnDesc": "管理数据",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "accountCapitalNode",
+              "pageDesc": "节点路由",
+              "pagePath": "/system-settings/swap-params-settings/page-account-capital-node",
+              "permissions": [
+                {
+                  "btnName": "manage",
+                  "btnDesc": "管理数据",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "listsAreNotSubmitted",
+              "pageDesc": "不报送列表",
+              "pagePath": "/system-settings/swap-params-settings/lists-are-not-submitted",
+              "permissions": [
+                {
+                  "btnName": "manage",
+                  "btnDesc": "管理不报送列表",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "department",
+          "pageDesc": "部门管理",
+          "pagePath": "/system-settings/department",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "authDepartmentSet",
+              "btnDesc": "配置部门",
+              "apiUrls": "/auth-service/authDepartment/authDepartmentCreate,/auth-service/authDepartment/authDepartmentModify"
+            },
+            {
+              "btnName": "authDepartmentRemove",
+              "btnDesc": "删除部门",
+              "apiUrls": "/auth-service/authDepartment/authDepartmentRemove"
+            }
+          ]
+        },
+        {
+          "pageName": "tradeBooks",
+          "pageDesc": "交易簿管理",
+          "pagePath": "/system-settings/tradeBooks",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "users",
+          "pageDesc": "用户权限管理",
+          "pagePath": "/system-settings/users",
+          "permissions": [
+            {
+              "btnName": "user",
+              "btnDesc": "用户管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "user-set",
+              "btnDesc": "用户管理-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "user-delete",
+              "btnDesc": "用户管理-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "user-export",
+              "btnDesc": "用户管理-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "role",
+              "btnDesc": "角色管理",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "role-set",
+              "btnDesc": "角色管理-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "role-delete",
+              "btnDesc": "角色管理-删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "uniteRiskControl",
+          "pageDesc": "联合风控设置",
+          "pagePath": "/system-settings/unite-risk-control",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "disable",
+              "btnDesc": "禁用/启用",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "documentManagement",
+          "pageDesc": "文档模板",
+          "pagePath": "/system-settings/document-management",
+          "permissions": [
+            {
+              "btnName": "tradeConfirmation-library",
+              "btnDesc": "交易确认书-模板库",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-library-set",
+              "btnDesc": "交易确认书-模板库-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-library-delete",
+              "btnDesc": "交易确认书-模板库-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-library-download",
+              "btnDesc": "交易确认书-模板库-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-default",
+              "btnDesc": "交易确认书-默认模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-default-set",
+              "btnDesc": "交易确认书-默认模板配置-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-default-delete",
+              "btnDesc": "交易确认书-默认模板配置-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "tradeConfirmation-default-export",
+              "btnDesc": "交易确认书-默认模板配置-导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-library",
+              "btnDesc": "补充确认书-模板库",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-library-set",
+              "btnDesc": "补充确认书-模板库-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-library-delete",
+              "btnDesc": "补充确认书-模板库-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-library-download",
+              "btnDesc": "补充确认书-模板库-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-default",
+              "btnDesc": "补充确认书-默认模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-default-set",
+              "btnDesc": "补充确认书-默认模板配置-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "supplementConfirmation-default-delete",
+              "btnDesc": "补充确认书-默认模板配置-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-library",
+              "btnDesc": "平仓确认书/结算通知书-模板库",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-library-set",
+              "btnDesc": "平仓确认书/结算通知书-模板库-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-library-delete",
+              "btnDesc": "平仓确认书/结算通知书-模板库-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-library-download",
+              "btnDesc": "平仓确认书/结算通知书-模板库-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-default",
+              "btnDesc": "平仓确认书/结算通知书-默认模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-default-set",
+              "btnDesc": "平仓确认书/结算通知书-默认模板配置-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "unwindSettle-default-delete",
+              "btnDesc": "平仓确认书/结算通知书-默认模板配置-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-library",
+              "btnDesc": "客户估值模板-模板库",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-library-set",
+              "btnDesc": "客户估值模板-模板库-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-library-delete",
+              "btnDesc": "客户估值模板-模板库-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-library-download",
+              "btnDesc": "客户估值模板-模板库-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-default",
+              "btnDesc": "客户估值模板-默认模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-default-set",
+              "btnDesc": "客户估值模板-默认模板配置-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "valuationReport-default-delete",
+              "btnDesc": "客户估值模板-默认模板配置-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "mailSend-library",
+              "btnDesc": "邮件发送模板-模板库",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "mailSend-library-set",
+              "btnDesc": "邮件发送模板-模板库-配置",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "mailSend-library-delete",
+              "btnDesc": "邮件发送模板-模板库-删除",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "mailSend-library-download",
+              "btnDesc": "邮件发送模板-模板库-下载",
+              "apiUrls": "",
+              "licenseFunction": "(MAIL_SEND)"
+            },
+            {
+              "btnName": "callReturn-library",
+              "btnDesc": "追保函/退保函-模板库",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "callReturn-library-set",
+              "btnDesc": "追保函/退保函-模板库-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "callReturn-library-delete",
+              "btnDesc": "追保函/退保函-模板库-删除",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "callReturn-library-download",
+              "btnDesc": "追保函/退保函-模板库-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "callReturn-default",
+              "btnDesc": "追保函/退保函-默认模板配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "callReturn-default-set",
+              "btnDesc": "追保函/退保函-默认模板配置-配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "callReturn-default-delete",
+              "btnDesc": "追保函/退保函-默认模板配置-删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "approval",
+          "pageDesc": "审批管理",
+          "pagePath": "/system-settings/approval",
+          "children": [
+            {
+              "pageName": "processConfiguration",
+              "pageDesc": "审批流程配置",
+              "pagePath": "/system-settings/approval/process-configuration",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": "/workflow-service/approveGroup/approveGroupList,/workflow-service/process/processList"
+                },
+                {
+                  "btnName": "process",
+                  "btnDesc": "编辑审批流程",
+                  "apiUrls": "/workflow-service/process/processModify,/workflow-service/processInstance/processInstanceListByProcessName"
+                },
+                {
+                  "btnName": "whoCan",
+                  "btnDesc": "设置谁能发起审批",
+                  "apiUrls": "/workflow-service/approveGroup/taskApproveGroupBind"
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "审批配置",
+                  "apiUrls": "/workflow-service/processConfig/processConfigModify"
+                }
+              ]
+            },
+            {
+              "pageName": "auditingManagement",
+              "pageDesc": "审批组管理",
+              "pagePath": "/system-settings/approval/auditing-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": "/workflow-service/approveGroup/approveGroupList"
+                },
+                {
+                  "btnName": "approveGroupSet",
+                  "btnDesc": "配置审批组",
+                  "apiUrls": "/workflow-service/approveGroup/approveGroupCreate,/workflow-service/approveGroup/approveGroupModify"
+                },
+                {
+                  "btnName": "approveGroupDelete",
+                  "btnDesc": "删除审批组",
+                  "apiUrls": "/workflow-service/approveGroup/approveGroupDelete"
+                },
+                {
+                  "btnName": "approveGroupUserListModify",
+                  "btnDesc": "修改成员",
+                  "apiUrls": "/workflow-service/approveGroup/approveGroupUserListModify"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "jobs",
+          "pageDesc": "任务管理",
+          "pagePath": "/system-settings/jobs",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "openCloseMission",
+              "btnDesc": "开启/关闭定时更新状态",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "approveGroupDelete",
+              "btnDesc": "",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "approveGroupUserListModify",
+              "btnDesc": "",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "新增/修改任务",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除任务",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "implement",
+              "btnDesc": "执行/终止任务",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "enable",
+              "btnDesc": "启用/禁用任务",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "cacheManagement",
+          "pageDesc": "缓存管理",
+          "pagePath": "/system-settings/cache-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "clear",
+              "btnDesc": "清除缓存",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "yhzqTradebooks",
+          "pageDesc": "交易簿管理",
+          "pagePath": "/system-settings/yhzq/tradebooks",
+          "clientId": "yhzq"
+        },
+        {
+          "pageName": "operationLog",
+          "pageDesc": "系统日志",
+          "pagePath": "/system-settings/operation-log",
+          "permissions": [
+            {
+              "btnName": "logs",
+              "btnDesc": "操作日志",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "logsConfigs",
+              "btnDesc": "操作日志配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "logsConfigs-edit",
+              "btnDesc": "操作日志配置-编辑",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "logsConfigsDocuments",
+              "btnDesc": "日志文件",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "logsConfigsDocuments-download",
+              "btnDesc": "日志文件-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "systemStatus",
+              "btnDesc": "系统运行状态",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "systemStatus-refresh",
+              "btnDesc": "系统运行状态-刷新",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "systemStatus-copy",
+              "btnDesc": "系统运行状态-复制",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "systemStatus-download",
+              "btnDesc": "系统运行状态-下载",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "systemStatus-clearAndRefresh",
+              "btnDesc": "系统运行状态-清理内存后刷新",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "otherSettings",
+          "pageDesc": "其他设置",
+          "pagePath": "/system-settings/other-settings",
+          "children": [
+            {
+              "pageName": "seqTemplate",
+              "pageDesc": "编号流水规则",
+              "pagePath": "/system-settings/other-settings/seqTemplate",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "配置流水规则",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "rule",
+                  "btnDesc": "生效规则",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "defaultValueSettings",
+              "pageDesc": "默认值配置",
+              "pagePath": "/system-settings/other-settings/default-value-settings",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "import",
+                  "btnDesc": "导入默认值",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "delete",
+                  "btnDesc": "删除默认值",
+                  "apiUrls": ""
+                }
+              ]
+            },
+            {
+              "pageName": "dictionaryManagement",
+              "pageDesc": "码表管理",
+              "pagePath": "/system-settings/other-settings/dictionary-management",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": "/reference-data-service/dictionary/page-dict"
+                },
+                {
+                  "btnName": "set",
+                  "btnDesc": "管理码表",
+                  "apiUrls": "/reference-data-service/dictionary/create-dict"
+                }
+              ]
+            },
+            {
+              "pageName": "clientManagementConfig",
+              "pageDesc": "客户管理配置",
+              "pagePath": "/system-settings/other-settings/config",
+              "permissions": [
+                {
+                  "btnName": "selectPage",
+                  "btnDesc": "查看页面",
+                  "apiUrls": "/reference-data-service/config/get-by-name"
+                },
+                {
+                  "btnName": "clientSet",
+                  "btnDesc": "编辑客户信息字段",
+                  "apiUrls": "/reference-data-service/config/update-config"
+                },
+                {
+                  "btnName": "organizationSet",
+                  "btnDesc": "编辑机构信息字段",
+                  "apiUrls": "/reference-data-service/config/update-config"
+                },
+                {
+                  "btnName": "enclosureSet",
+                  "btnDesc": "编辑附件类型",
+                  "apiUrls": "/reference-data-service/config/update-config"
+                }
+              ]
+            },
+            {
+              "pageName": "bookingPageSettings",
+              "pageDesc": "簿记页面配置",
+              "pagePath": "/system-settings/other-settings/booking-page-settings"
+            },
+            {
+              "pageName": "template",
+              "pageDesc": "自定义字段",
+              "pagePath": "/system-settings/other-settings/template",
+              "permissions": [
+                {
+                  "btnName": "set",
+                  "btnDesc": "配置自定义字段",
+                  "apiUrls": ""
+                },
+                {
+                  "btnName": "delete",
+                  "btnDesc": "删除自定义字段",
+                  "apiUrls": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "pageName": "structureNoteManagement",
+          "pageDesc": "收益凭证产品名称管理",
+          "pagePath": "/system-settings/structure-note-management",
+          "permissions": [
+            {
+              "btnName": "selectPage",
+              "btnDesc": "查看页面",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "set",
+              "btnDesc": "配置",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "export",
+              "btnDesc": "导出",
+              "apiUrls": ""
+            },
+            {
+              "btnName": "delete",
+              "btnDesc": "删除",
+              "apiUrls": ""
+            }
+          ]
+        },
+        {
+          "pageName": "systemParameter",
+          "pageDesc": "系统配置",
+          "pagePath": "/system-settings/system-parameter"
+        },
+        {
+          "pageName": "customSettings",
+          "pageDesc": "自定义设置",
+          "pagePath": "/system-settings/axzq/custom-settings",
+          "clientId": "axzq"
+        },
+        {
+          "pageName": "swhyPartyPushController",
+          "pageDesc": "推送日志",
+          "pagePath": "/system-settings/swhy/party-push-controller",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "swhyCapitalConfig",
+          "pageDesc": "业务参数设置",
+          "pagePath": "/system-settings/swhy/capital-config",
+          "clientId": "swhy"
+        },
+        {
+          "pageName": "xyzqCalculatorTemplate",
+          "pageDesc": "计算公式管理",
+          "pagePath": "/system-settings/xyzq/calculator-template",
+          "clientId": "xyzq"
+        }
+      ]
+    },
+    {
+      "pageName": "swapClientManagement",
+      "pageDesc": "收益互换客户管理",
+      "pagePath": "/bct-trt",
+      "microApp": "tradeTerminal",
+      "hideChildrenInMenu": true,
+      "children": [
+        {
+          "pageName": "couponPoolManagement",
+          "pageDesc": "券池管理",
+          "pagePath": "/swap-client-management/coupon-pool"
+        },
+        {
+          "pageName": "orderManagement",
+          "pageDesc": "订单管理",
+          "pagePath": "/swap-client-management/order",
+          "children": [
+            {
+              "pageName": "traderOrderManagement",
+              "pageDesc": "普通订单管理",
+              "pagePath": "/swap-client-management/order/trader-order"
+            },
+            {
+              "pageName": "b2bOrderManagement",
+              "pageDesc": "背靠背订单管理",
+              "pagePath": "/swap-client-management/order/b2b-order"
+            }
+          ]
+        },
+        {
+          "pageName": "swapClientSystem",
+          "pageDesc": "系统管理",
+          "pagePath": "/swap-client-management/swap-client-system",
+          "children": [
+            {
+              "pageName": "swapClientUserManagement",
+              "pageDesc": "客户管理",
+              "pagePath": "/swap-client-management/user-management"
+            },
+            {
+              "pageName": "bookingTemplate",
+              "pageDesc": "簿记模板",
+              "pagePath": "/swap-client-management/booking-template"
+            },
+            {
+              "pageName": "riskControlManagement",
+              "pageDesc": "风控管理",
+              "pagePath": "/swap-client-management/risk-control-management"
+            },
+            {
+              "pageName": "authManagement",
+              "pageDesc": "权限管理",
+              "pagePath": "/swap-client-management/auth-management"
+            },
+            {
+              "pageName": "mailTemplate",
+              "pageDesc": "邮件设置",
+              "pagePath": "/swap-client-management/mail-template"
+            },
+            {
+              "pageName": "mailManagement",
+              "pageDesc": "邮件管理",
+              "pagePath": "/swap-client-management/mail-management"
+            },
+            {
+              "pageName": "b2bSettings",
+              "pageDesc": "背靠背配置",
+              "pagePath": "/swap-client-management/b2b-settings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "liquidationPages",
+      "pageDesc": "清算模块",
+      "pagePath": "/bct-liquidation",
+      "microApp": "liquidation",
+      "hideChildrenInMenu": true,
+      "children": [
+        {
+          "pageName": "clearingFlow",
+          "pageDesc": "流程管理",
+          "children": [
+            {
+              "pageName": "workflow",
+              "pageDesc": "清算流程图"
+            }
+          ]
+        },
+        {
+          "pageName": "dataManagement",
+          "pageDesc": "数据管理",
+          "children": [
+            {
+              "pageName": "pageRatesManagement",
+              "pageDesc": "费率管理"
+            },
+            {
+              "pageName": "pageQueryPosition",
+              "pageDesc": "持仓查询",
+              "children": [
+                {
+                  "pageName": "pageQueryOmsPosition",
+                  "pageDesc": "持仓查询-对冲台"
+                },
+                {
+                  "pageName": "pageQueryCounterPosition",
+                  "pageDesc": "持仓查询-柜台"
+                }
+              ]
+            },
+            {
+              "pageName": "pageCostStatistics",
+              "pageDesc": "费用统计"
+            },
+            {
+              "pageName": "pageQueryExecution",
+              "pageDesc": "成交查询"
+            },
+            {
+              "pageName": "pageDepositWithdrawal",
+              "pageDesc": "出入金查询"
+            },
+            {
+              "pageName": "pageBalanceRecon",
+              "pageDesc": "资金对账"
+            },
+            {
+              "pageName": "pagePositionRecon",
+              "pageDesc": "持仓对账"
+            },
+            {
+              "pageName": "pageTransactionAccount",
+              "pageDesc": "成交分账"
+            },
+            {
+              "pageName": "pageAdjustBalance",
+              "pageDesc": "资金调账"
+            },
+            {
+              "pageName": "pageAdjustPosition",
+              "pageDesc": "持仓调仓"
+            },
+            {
+              "pageName": "pageQueryUserAccount",
+              "pageDesc": "用户账户查询"
+            },
+            {
+              "pageName": "pageFutureQueryPositionDetail",
+              "pageDesc": "期货持仓明细查询"
+            },
+            {
+              "pageName": "pageFuturePositionDetailRecon",
+              "pageDesc": "期货持仓明细对账"
+            },
+            {
+              "pageName": "pageTradingCalendar",
+              "pageDesc": "交易日历"
+            }
+          ]
+        },
+        {
+          "pageName": "fastClearing",
+          "pageDesc": "快速清算",
+          "children": [
+            {
+              "pageName": "fastClearingPageExternalExecution",
+              "pageDesc": "客户委托-柜台成交流水"
+            }
+          ]
+        },
+        {
+          "pageName": "companyBehavior",
+          "pageDesc": "公司行为",
+          "children": [
+            {
+              "pageName": "pageQueryCompanyBehavior",
+              "pageDesc": "查询公司行为"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "swapPages",
+      "pageDesc": "互换模块",
+      "pagePath": "/bct-swap",
+      "microApp": "swap"
+    },
+    {
+      "pageName": "swhyService",
+      "pageDesc": "定制化功能模块",
+      "pagePath": "/swhy-service",
+      "microApp": "customized-module",
+      "clientId": "swhy",
+      "children": [
+        {
+          "pageName": "swhyReportSummary",
+          "pageDesc": "报表汇总",
+          "microApp": "customized-module",
+          "clientId": "swhy",
+          "children": [
+            {
+              "pageName": "swhySwapSummary",
+              "pageDesc": "互换汇总统计表",
+              "pagePath": "/swhy-service/swap-summary",
+              "microApp": "customized-module",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyTargetMonitoring",
+              "pageDesc": "标的监控",
+              "pagePath": "/swhy-service/target-monitoring",
+              "microApp": "customized-module",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyCustomerTargetMonitoring",
+              "pageDesc": "分客户标的监控",
+              "pagePath": "/swhy-service/customer-target-monitoring",
+              "microApp": "customized-module",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyEADReport",
+              "pageDesc": "同一客户集中度管控信息报送表",
+              "pagePath": "/swhy-service/ead-report",
+              "microApp": "customized-module",
+              "clientId": "swhy"
+            }
+          ]
+        },
+        {
+          "pageName": "swhyMonitorCenter",
+          "pageDesc": "监控信息汇总",
+          "microApp": "customized-module",
+          "clientId": "swhy",
+          "children": [
+            {
+              "pageName": "swhySZChainReport",
+              "pageDesc": "上证云链监控信息",
+              "pagePath": "/swhy-service/szchain-report",
+              "microApp": "customized-module",
+              "clientId": "swhy"
+            },
+            {
+              "pageName": "swhyOTCESignReport",
+              "pageDesc": "易签监控信息",
+              "pagePath": "/swhy-service/otcesign-report",
+              "microApp": "customized-module",
+              "clientId": "swhy"
+            }
+          ]
+        },
+        {
+          "pageName": "swhySwapFunds",
+          "pageDesc": "",
+          "pagePath": "/swhy-service/swap-funds",
+          "microApp": "customized-module",
+          "clientId": "swhy"
+        }
+      ]
+    },
+    {
+      "pageName": "terminalWebPages",
+      "pageDesc": "期权网厅模块",
+      "pagePath": "/bct-terminal",
+      "microApp": "terminalWeb"
+    }
+  ]
+}

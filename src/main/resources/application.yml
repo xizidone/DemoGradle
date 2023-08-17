@@ -1,0 +1,79 @@
+spring:
+  application:
+    name: inverse-calc-server
+  profiles:
+    active: ${DATABASE:postgres},${CUSTOMIZED_PROFILE:customized}
+  netty:
+    leak-detection: ${NETTY_LEAK_DETECTION:advanced}
+
+logging:
+  level:
+    root: ${LOGGING_LEVEL:INFO}
+
+server:
+  port: 8088
+
+bct:
+  username: ${BCT_USERNAME:c2NyaXB0}
+  password: ${BCT_PASSWORD:MTIzNDU2YS4=}
+  url: ${BCT_URL:localhost:16000}
+
+first:
+  username: ${FIRST_USERNAME:dGVzdDE=}
+  password: ${FIRST_PASSWORD:MTIzNHF3ZXI=}
+  server-address: ${FIRST_SERVER_ADDRESS:tcp://10.3.2.52:60281}
+
+ty:
+  report:
+    pybctPath: ${PYBCT_PATH:./scripts/pyReport}
+  terminal:
+    username: ${TY_TERMINAL_USERNAME:9JQOuz5fKDdOkErgrxNVGg==}
+    password: ${TY_TERMINAL_PASSWORD:9JQOuz5fKDc1maiFBKlh1A==}
+    clientId: ${TY_TERMINAL_CLIENT_ID:1427453644940247040}
+    clientSecret: ${TY_TERMINAL_CLIENT_SECRET:zDpAuJepVdBGyuKl}
+    grantType: ${TY_TERMINAL_GRANT_TYPE:password}
+    host: ${TY_TERMINAL_HOST:https://terminal.tongyu-quant.com}
+
+
+pricingServices:
+  url: ${PRICING_SERVICES_URL:localhost}
+  parameter: ${PARAMETER_GROUP_NAME:默认}
+
+feign:
+  httpclient:
+    enabled: true
+  client:
+    url:
+      bct-server: ${BCT_SERVER:localhost/bct}
+      auth-service: ${BCT_SERVER_AUTH:${feign.client.url.bct-server}}
+      trade-service: ${BCT_SERVER_TRADE:${feign.client.url.bct-server}}
+      market-data-service: ${BCT_SERVER_MARKET:${feign.client.url.bct-server}}
+      capital-service: ${BCT_SERVER_CAPITAL:${feign.client.url.bct-server}}
+      exchange-service: ${BCT_SERVER_EXCHANGE:${feign.client.url.bct-server}}
+      margin-service: ${BCT_SERVER_MARGIN:${feign.client.url.bct-server}}
+      reference-data-service: ${BCT_SERVER_REFERENCE:${feign.client.url.bct-server}}
+      pricing-service: ${BCT_SERVER_PRICING:${feign.client.url.bct-server}}
+      report-service: ${BCT_SERVER_REPORT:${feign.client.url.bct-server}}
+
+# springdoc-openapi项目配置
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    enabled: ${IC_API_DOC:false}
+    path: /v3/api-docs
+  group-configs:
+    - group: '测试'
+      paths-to-match: '/**'
+      packages-to-scan: tech.tongyu.bct.controller
+    - group: '反算'
+      paths-to-match: '/**'
+      packages-to-scan: tech.tongyu.bct.ic
+
+# knife4j的增强配置，不需要增强可以不配
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn

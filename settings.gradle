@@ -1,0 +1,32 @@
+
+
+pluginManagement {
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin/" }
+        gradlePluginPortal()
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin/" }
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            credentials {
+                username 'admin'
+                password 'Tongyu_nexus'
+            }
+            allowInsecureProtocol true
+            url "http://10.1.5.60:7703/repository/maven-public/"
+        }
+        maven { url "https://maven.aliyun.com/repository/public/" }
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'DemoGradle'
